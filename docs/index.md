@@ -1,37 +1,93 @@
-O **_OpenGeodata_** tem como objetivo disponibilizar dados espaciais para pequenos projetos. A concepção é que ter os
-dados localmente pode ser mais interessante (e barato!) que manter dados em servidores.\
-Alguns dos dados básicos disponíveis no pacote são:
+# Open Geodata
 
-- **geo.br_ibge.br_ibge**: Limites dos Estados
-- **geo.sp.sp_050k_wgs84**: Limites administrativos municipais do Estado de São Paulo em escala 1:50.000.
-- **geo.sp.sp_250k_wgs84**: Limites administrativos municipais do Estado de São Paulo em escala 1:250.000.
+[![Repo](https://img.shields.io/badge/GitHub-repo-blue?logo=github&logoColor=f5f5f5)](https://github.com/michelmetran/open-geodata)
+[![PyPI - Version](https://img.shields.io/pypi/v/open-geodata?logo=pypi&label=PyPI&color=blue)](https://pypi.org/project/open-geodata/)<br>
+[![Read the Docs](https://img.shields.io/readthedocs/open-geodata?logo=ReadTheDocs&label=Read%20The%20Docs)](https://open-geodata.readthedocs.io/pt/latest/)
+[![Publish Python to PyPI](https://github.com/michelmetran/open-geodata/actions/workflows/publish-to-pypi-uv.yml/badge.svg)](https://github.com/michelmetran/open-geodata/actions/workflows/publish-to-pypi-uv.yml)
 
-<br>
+O **_Open Geodata_** tem como objetivo facilitar o acesso à dados espaciais de instituições públicas e privadas do Brasil. O projeto agrega pacotes para obtenção de diferentes tipos de dados, bem como define funções e classes para obtenção de dados específicos.
 
-Os dados espaciais são compilados no _packages_ do python, disponíveis para serem instalados por meio do _pip install_. Todos os dados estão em formato _geopackage_ (extensão _.gpkg_) e são comprimidos usando o _7zip_. Existem também alguns dados em formatos tabulares, em arquivos _.csv_, também comprimidos usando o _7zip_.
+As principais dependências utilizadas pelo **_Open Geodata_** para obter dados espaciais são:
 
-Com o pacote **_OpenGeodata_**, os dados espaciais são lidos como _geodataframes_(Geopandas), enquanto os dados tabulares são lidos como _dataframe_ (Pandas).
-
-O projeto disponibiliza poucos dados, tendo em vista a limitação de 100mb do repositório oficial [PyPi](https://pypi.org/). É possível acessar outros dados instalando pacotes adicionais listados...
-
-Para possibilitar testes do pacote, criei
-um [Google Colab](https://colab.research.google.com/drive/1s_w9t599OstJ0KS99NusH2EVGYa5twMh?usp=sharing).<br>
-Todos os _datasets_ estão com _datum_ WGS84 (EPSG: 4326).
+- [Pooch](https://www.fatiando.org/pooch/latest/), trata-se de um biblioteca _python_, [_opensource_](https://github.com/fatiando/pooch), do projeto chamado [Fatiando a Terra](https://www.fatiando.org/). Tomei conhecimento ao vê-lo como dependência da biblioteca [geopandas/**geodatasets**](https://github.com/geopandas/geodatasets).
+- [OWSlib](https://owslib.readthedocs.io/en/latest/) é uma biblioteca _python_, de [_opensource_](https://github.com/geopython/OWSLib), que fornece uma interface comum para interagir com diversos serviços _web_ geoespaciais baseados em padrões OGC ([_Open Geospatial Consortium_](https://www.ogc.org/)), tais como: WMS, WFS, WCS, WMTS, CSW entre outros.
+- [Bolton & Menk GIS/restapi](https://github.com/Bolton-and-Menk-GIS/restapi), biblioteca _opensource_ projetada para funcionar com os serviços REST do ArcGIS Server, para consultar e extrair dados, além de visualizar propriedades de serviço.
+- [ArcGIS API for Python](https://developers.arcgis.com/python/latest/), biblioteca proprietária (da [ESRI](https://www.esri.com/)), disponibilizada no [PyPI](https://pypi.org/project/arcgis/), utilizada para consumir dados do ArcGIS Server.
 
 <br>
 
-Alguma dúvida, sugestão e/ou contribuição, favor reportar um [problema/_issue_](https://github.com/michelmetran/open-geodata/issues).
+Ainda, a documentação é parte fundamental da biblioteca _Open Geodata_, onde são apresentados exemplos e maneiras de usar a biblioteca, bem como as dezenas de fontes abertas na _internet_.
 
-!!! note
+!!! abstract "Inspiração: do projeto à biblioteca!"
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-    massa, nec semper lorem quam in massa.
+    *Existe muita coisa disponível na *internet*: pra que querer guardar tudo no seu PC!?*
 
+    Sempre colecionei dados espaciais e, inclusive, estudava como implantar o meu próprio [GeoServer](https://geoserver.org/). Fui vivenciando os problemas de ter dados espaciais armazenados: ocupam muito espaço e rapidamente ficam desatualizados.
 
+    Passei a estudar maneiras de mante-los atualizados e, com isso, conheci as potencialidades do *python*. Mantinha os dados e rotinas de atualização, algumas delas disponíveis no [projeto *Open Geodata*](https://github.com/open-geodata).
+    Passado algum tempo observei que a minha real necessidade era ter apenas a rotina de atualização, obtendo o dado mais atualizado, para o uso pontual (sem consistir o dado no meu HD / sem armazena-lo): iniciei o desenvolvimento da [biblioteca *Open Geodata*](https://github.com/michelmetran/open-geodata).
 
-!!! note "Phasellus posuere in sem ut cursus"
+    ... uma longa trajetória, iniciada muito tempo atrás, quando se comprava "cartas do [Instituto Geográfico e Cartográfico](https://www.igc.sp.gov.br/)" na papelaria da faculdade, com *pen drive*: *good ol' days!*
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-    massa, nec semper lorem quam in massa.
+<br>
+
+Alguma dúvida, sugestão e/ou contribuição, favor reportar um [problema/_issue_](https://github.com/michelmetran/open-geodata/issues) ou abrir um tópico de [discussão](https://github.com/michelmetran/open-geodata/discussions).
+
+<br>
+
+```mermaid
+flowchart LR
+    A .-> B
+    B  .-> C
+    A --Não Armazena --> C
+
+    B@{ shape: cyl}
+    A(["Obter"])
+    B["Armazenar"]
+    C["Usar"]
+```
+
+<br>
+
+---
+
+## Como instalar
+
+O pacote está disponível no repositório oficial do _python_: [PyPI](https://pypi.org/project/open-geodata/).
+
+```shell
+# Instala usando pip
+pip3 install open-geodata --upgrade
+
+# Instala usando uv
+uv add open-geodata
+
+# Instala usando uv
+poetry add open-geodata
+```
+
+<br>
+
+<body>
+    <div style="text-align:center;">
+        Centered Content (width reduced for illustrative purposes in SO)
+        ```mermaid
+        ---
+        config:
+            theme: mc
+            look: handDrawn
+            layout: dagre
+        ---
+        flowchart LR
+            A .-> B
+            B  .-> C
+            A --Não Armazena --> C
+
+            B@{ shape: cyl}
+            A(["Obter"])
+            B["Armazenar"]
+            C["Usar"]
+        ```
+    </div>
+
+</body>

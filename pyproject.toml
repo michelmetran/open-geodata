@@ -8,6 +8,8 @@ license = "MIT"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    #"arcgis==2.4.1.1",
+    "bmi-arcgis-restapi>=2.4.13",
     "earthengine-api>=1.5.19",
     "folium>=0.19.7",
     "geemap>=0.35.3",
@@ -15,10 +17,12 @@ dependencies = [
     "mapclassify>=2.9.0",
     "matplotlib>=3.10.3",
     "more-itertools>=10.7.0",
+    "owslib>=0.34.1",
     "pandas>=2.3.0",
     "pooch>=1.8.2",
     "py7zr>=1.0.0",
     "rarfile>=4.2",
+    "requests-ip-rotator>=1.0.14",
     "selenium>=4.33.0",
     # pip install git+https://github.com/urbanogilson/SICAR
     "sicar",
@@ -26,16 +30,15 @@ dependencies = [
 ]
 
 [project.urls]
-#Homepage = "https://github.com/Malwarebytes/ghas-cli"
 Issues = "https://github.com/michelmetran/open-geodata/issues"
 Documentation = "https://open-geodata.readthedocs.io/pt/latest/"
 Repository = "https://github.com/michelmetran/open-geodata"
-#Changelog = "https://github.com/Malwarebytes/ghas-cli/releases"
+Discussions = "https://github.com/michelmetran/open-geodata/discussions"
 #Funding = "https://www.malwarebytes.com/"
 
 
 [dependency-groups]
-dev = ["notebook>=7.4.3"]
+dev = ["notebook>=7.4.3", "python-dotenv>=1.1.0"]
 docs = [
     "mkdocs>=1.6.1",
     "mkdocs-jupyter>=0.25.1",

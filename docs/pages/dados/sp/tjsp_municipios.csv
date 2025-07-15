@@ -1,0 +1,646 @@
+id_municipio,municipio_nome,id_municipio_tjsp,municipio_tjsp
+3500105,Adamantina,6504,Adamantina
+3500204,Adolfo,6505,Adolfo
+3500303,Aguaí,6506,Aguaí
+3500402,Águas da Prata,6507,Águas da Prata
+3500501,Águas de Lindóia,6508,Águas de Lindóia
+3500550,Águas de Santa Bárbara,6509,Águas de Santa Bárbara
+3500600,Águas de São Pedro,6510,Águas de São Pedro
+3500709,Agudos,6511,Agudos
+3500758,Alambari,6512,Alambari
+3500808,Alfredo Marcondes,6513,Alfredo Marcondes
+3500907,Altair,6514,Altair
+3501004,Altinópolis,6515,Altinópolis
+3501103,Alto Alegre,6516,Alto Alegre
+3501152,Alumínio,6517,Alumínio
+3501202,Álvares Florence,6518,Álvares Florence
+3501301,Álvares Machado,6519,Álvares Machado
+3501400,Álvaro de Carvalho,6520,Álvaro de Carvalho
+3501509,Alvinlândia,6521,Alvinlândia
+3501608,Americana,6522,Americana
+3501707,Américo Brasiliense,6523,Américo Brasiliense
+3501806,Américo de Campos,6524,Américo de Campos
+3501905,Amparo,6525,Amparo
+3502002,Analândia,6526,Analândia
+3502101,Andradina,6527,Andradina
+3502200,Angatuba,6528,Angatuba
+3502309,Anhembi,6529,Anhembi
+3502408,Anhumas,6530,Anhumas
+3502507,Aparecida,6531,Aparecida
+3502606,Aparecida d'Oeste,6532,Aparecida d'Oeste
+3502705,Apiaí,6533,Apiaí
+3502754,Araçariguama,6534,Araçariguama
+3502804,Araçatuba,6535,Araçatuba
+3502903,Araçoiaba da Serra,6536,Araçoiaba da Serra
+3503000,Aramina,6537,Aramina
+3503109,Arandu,6538,Arandu
+3503158,Arapeí,6539,Arapeí
+3503208,Araraquara,6540,Araraquara
+3503307,Araras,6541,Araras
+3503356,Arco-Íris,6542,Arco-Íris
+3503406,Arealva,6543,Arealva
+3503505,Areias,6544,Areias
+3503604,Areiópolis,6545,Areiópolis
+3503703,Ariranha,6546,Ariranha
+3503802,Artur Nogueira,6547,Artur Nogueira
+3503901,Arujá,6548,Arujá
+3503950,Aspásia,6549,Aspásia
+3504008,Assis,6550,Assis
+3504107,Atibaia,6551,Atibaia
+3504206,Auriflama,6552,Auriflama
+3504305,Avaí,6553,Avaí
+3504404,Avanhandava,6554,Avanhandava
+3504503,Avaré,6555,Avaré
+3504602,Bady Bassitt,6556,Bady Bassitt
+3504701,Balbinos,6557,Balbinos
+3504800,Bálsamo,6558,Bálsamo
+3504909,Bananal,6559,Bananal
+3505005,Barão de Antonina,6560,Barão de Antonina
+3505104,Barbosa,6561,Barbosa
+3505203,Bariri,6562,Bariri
+3505302,Barra Bonita,6563,Barra Bonita
+3505351,Barra do Chapéu,6564,Barra do Chapéu
+3505401,Barra do Turvo,6565,Barra do Turvo
+3505500,Barretos,6566,Barretos
+3505609,Barrinha,6567,Barrinha
+3505708,Barueri,6568,Barueri
+3505807,Bastos,6569,Bastos
+3505906,Batatais,6570,Batatais
+3506003,Bauru,6571,Bauru
+3506102,Bebedouro,6572,Bebedouro
+3506201,Bento de Abreu,6573,Bento de Abreu
+3506300,Bernardino de Campos,6574,Bernardino de Campos
+3506359,Bertioga,6575,Bertioga
+3506409,Bilac,6576,Bilac
+3506508,Birigui,6577,Birigui
+3506607,Biritiba-Mirim,6578,Biritiba-Mirim
+3506706,Boa Esperança do Sul,6579,Boa Esperança do Sul
+3506805,Bocaina,6580,Bocaina
+3506904,Bofete,6581,Bofete
+3507001,Boituva,6582,Boituva
+3507100,Bom Jesus dos Perdões,6583,Bom Jesus dos Perdões
+3507159,Bom Sucesso de Itararé,6584,Bom Sucesso de Itararé
+3507209,Borá,6585,Borá
+3507308,Boracéia,6586,Boracéia
+3507407,Borborema,6587,Borborema
+3507456,Borebi,6588,Borebi
+3507506,Botucatu,6589,Botucatu
+3507605,Bragança Paulista,6590,Bragança Paulista
+3507704,Braúna,6591,Braúna
+3507753,Brejo Alegre,6592,Brejo Alegre
+3507803,Brodowski,6593,Brodowski
+3507902,Brotas,6594,Brotas
+3508009,Buri,6595,Buri
+3508108,Buritama,6596,Buritama
+3508207,Buritizal,6597,Buritizal
+3508306,Cabrália Paulista,6598,Cabrália Paulista
+3508405,Cabreúva,6599,Cabreúva
+3508504,Caçapava,6600,Caçapava
+3508603,Cachoeira Paulista,6601,Cachoeira Paulista
+3508702,Caconde,6602,Caconde
+3508801,Cafelândia,6603,Cafelândia
+3508900,Caiabu,6604,Caiabu
+3509007,Caieiras,6605,Caieiras
+3509106,Caiuá,6606,Caiuá
+3509205,Cajamar,6607,Cajamar
+3509254,Cajati,6608,Cajati
+3509304,Cajobi,6609,Cajobi
+3509403,Cajuru,6610,Cajuru
+3509452,Campina do Monte Alegre,6611,Campina do Monte Alegre
+3509502,Campinas,6612,Campinas
+3509601,Campo Limpo Paulista,6613,Campo Limpo Paulista
+3509700,Campos do Jordão,6614,Campos do Jordão
+3509809,Campos Novos Paulista,6615,Campos Novos Paulista
+3509908,Cananéia,6616,Cananéia
+3509957,Canas,6617,Canas
+3510005,Cândido Mota,6618,Cândido Mota
+3510104,Cândido Rodrigues,6619,Cândido Rodrigues
+3510153,Canitar,6620,Canitar
+3510203,Capão Bonito,6621,Capão Bonito
+3510302,Capela do Alto,6622,Capela do Alto
+3510401,Capivari,6623,Capivari
+3510500,Caraguatatuba,6624,Caraguatatuba
+3510609,Carapicuíba,6625,Carapicuíba
+3510708,Cardoso,6626,Cardoso
+3510807,Casa Branca,6627,Casa Branca
+3510906,Cássia dos Coqueiros,6628,Cássia dos Coqueiros
+3511003,Castilho,6629,Castilho
+3511102,Catanduva,6630,Catanduva
+3511201,Catiguá,6631,Catiguá
+3511300,Cedral,6632,Cedral
+3511409,Cerqueira César,6633,Cerqueira César
+3511508,Cerquilho,6634,Cerquilho
+3511607,Cesário Lange,6635,Cesário Lange
+3511706,Charqueada,6636,Charqueada
+3557204,Chavantes,7147,Chavantes
+3511904,Clementina,6637,Clementina
+3512001,Colina,6638,Colina
+3512100,Colômbia,6639,Colômbia
+3512209,Conchal,6640,Conchal
+3512308,Conchas,6641,Conchas
+3512407,Cordeirópolis,6642,Cordeirópolis
+3512506,Coroados,6643,Coroados
+3512605,Coronel Macedo,6644,Coronel Macedo
+3512704,Corumbataí,6645,Corumbataí
+3512803,Cosmópolis,6646,Cosmópolis
+3512902,Cosmorama,6647,Cosmorama
+3513009,Cotia,6648,Cotia
+3513108,Cravinhos,6649,Cravinhos
+3513207,Cristais Paulista,6650,Cristais Paulista
+3513306,Cruzália,6651,Cruzália
+3513405,Cruzeiro,6652,Cruzeiro
+3513504,Cubatão,6653,Cubatão
+3513603,Cunha,6654,Cunha
+3513702,Descalvado,6655,Descalvado
+3513801,Diadema,6656,Diadema
+3513850,Dirce Reis,6657,Dirce Reis
+3513900,Divinolândia,6658,Divinolândia
+3514007,Dobrada,6659,Dobrada
+3514106,Dois Córregos,6660,Dois Córregos
+3514205,Dolcinópolis,6661,Dolcinópolis
+3514304,Dourado,6662,Dourado
+3514403,Dracena,6663,Dracena
+3514502,Duartina,6664,Duartina
+3514601,Dumont,6665,Dumont
+3514700,Echaporã,6666,Echaporã
+3514809,Eldorado,6667,Eldorado
+3514908,Elias Fausto,6668,Elias Fausto
+3514924,Elisiário,6669,Elisiário
+3514957,Embaúba,6670,Embaúba
+3515004,Embu das Artes,6671,Embu das Artes
+3515103,Embu-Guaçu,6672,Embu-Guaçu
+3515129,Emilianópolis,6673,Emilianópolis
+3515152,Engenheiro Coelho,6674,Engenheiro Coelho
+3515186,Espírito Santo do Pinhal,6675,Espírito Santo do Pinhal
+3515194,Espírito Santo do Turvo,6676,Espírito Santo do Turvo
+3557303,Estiva Gerbi,7148,Estiva Gerbi
+3515301,Estrela do Norte,6678,Estrela do Norte
+3515202,Estrela d'Oeste,6677,Estrela d'Oeste
+3515350,Euclides da Cunha Paulista,6679,Euclides da Cunha Paulista
+3515400,Fartura,6680,Fartura
+3515608,Fernando Prestes,6682,Fernando Prestes
+3515509,Fernandópolis,6681,Fernandópolis
+3515657,Fernão,6683,Fernão
+3515707,Ferraz de Vasconcelos,6684,Ferraz de Vasconcelos
+3515806,Flora Rica,6685,Flora Rica
+3515905,Floreal,6686,Floreal
+3516002,Flórida Paulista,6687,Flórida Paulista
+3516101,Florínea,6688,Florínea
+3516200,Franca,6689,Franca
+3516309,Francisco Morato,6690,Francisco Morato
+3516408,Franco da Rocha,6691,Franco da Rocha
+3516507,Gabriel Monteiro,6692,Gabriel Monteiro
+3516606,Gália,6693,Gália
+3516705,Garça,6694,Garça
+3516804,Gastão Vidigal,6695,Gastão Vidigal
+3516853,Gavião Peixoto,6696,Gavião Peixoto
+3516903,General Salgado,6697,General Salgado
+3517000,Getulina,6698,Getulina
+3517109,Glicério,6699,Glicério
+3517208,Guaiçara,6700,Guaiçara
+3517307,Guaimbê,6701,Guaimbê
+3517406,Guaíra,6702,Guaíra
+3517505,Guapiaçu,6703,Guapiaçu
+3517604,Guapiara,6704,Guapiara
+3517703,Guará,6705,Guará
+3517802,Guaraçaí,6706,Guaraçaí
+3517901,Guaraci,6707,Guaraci
+3518008,Guarani d'Oeste,6708,Guarani d'Oeste
+3518107,Guarantã,6709,Guarantã
+3518206,Guararapes,6710,Guararapes
+3518305,Guararema,6711,Guararema
+3518404,Guaratinguetá,6712,Guaratinguetá
+3518503,Guareí,6713,Guareí
+3518602,Guariba,6714,Guariba
+3518701,Guarujá,6715,Guarujá
+3518800,Guarulhos,6716,Guarulhos
+3518859,Guatapará,6717,Guatapará
+3518909,Guzolândia,6718,Guzolândia
+3519006,Herculândia,6719,Herculândia
+3519055,Holambra,6720,Holambra
+3519071,Hortolândia,6721,Hortolândia
+3519105,Iacanga,6722,Iacanga
+3519204,Iacri,6723,Iacri
+3519253,Iaras,6724,Iaras
+3519303,Ibaté,6725,Ibaté
+3519402,Ibirá,6726,Ibirá
+3519501,Ibirarema,6727,Ibirarema
+3519600,Ibitinga,6728,Ibitinga
+3519709,Ibiúna,6729,Ibiúna
+3519808,Icém,6730,Icém
+3519907,Iepê,6731,Iepê
+3520004,Igaraçu do Tietê,6732,Igaraçu do Tietê
+3520103,Igarapava,6733,Igarapava
+3520202,Igaratá,6734,Igaratá
+3520301,Iguape,6735,Iguape
+3520426,Ilha Comprida,6737,Ilha Comprida
+3520442,Ilha Solteira,6738,Ilha Solteira
+3520400,Ilhabela,6736,Ilhabela
+3520509,Indaiatuba,6739,Indaiatuba
+3520608,Indiana,6740,Indiana
+3520707,Indiaporã,6741,Indiaporã
+3520806,Inúbia Paulista,6742,Inúbia Paulista
+3520905,Ipaussu,6743,Ipaussu
+3521002,Iperó,6744,Iperó
+3521101,Ipeúna,6745,Ipeúna
+3521150,Ipiguá,6746,Ipiguá
+3521200,Iporanga,6747,Iporanga
+3521309,Ipuã,6748,Ipuã
+3521408,Iracemápolis,6749,Iracemápolis
+3521507,Irapuã,6750,Irapuã
+3521606,Irapuru,6751,Irapuru
+3521705,Itaberá,6752,Itaberá
+3521804,Itaí,6753,Itaí
+3521903,Itajobi,6754,Itajobi
+3522000,Itaju,6755,Itaju
+3522109,Itanhaém,6756,Itanhaém
+3522158,Itaóca,6757,Itaóca
+3522208,Itapecerica da Serra,6758,Itapecerica da Serra
+3522307,Itapetininga,6759,Itapetininga
+3522406,Itapeva,6760,Itapeva
+3522505,Itapevi,6761,Itapevi
+3522604,Itapira,6762,Itapira
+3522653,Itapirapuã Paulista,6763,Itapirapuã Paulista
+3522703,Itápolis,6764,Itápolis
+3522802,Itaporanga,6765,Itaporanga
+3522901,Itapuí,6766,Itapuí
+3523008,Itapura,6767,Itapura
+3523107,Itaquaquecetuba,6768,Itaquaquecetuba
+3523206,Itararé,6769,Itararé
+3523305,Itariri,6770,Itariri
+3523404,Itatiba,6771,Itatiba
+3523503,Itatinga,6772,Itatinga
+3523602,Itirapina,6773,Itirapina
+3523701,Itirapuã,6774,Itirapuã
+3523800,Itobi,6775,Itobi
+3523909,Itu,6776,Itu
+3524006,Itupeva,6777,Itupeva
+3524105,Ituverava,6778,Ituverava
+3524204,Jaborandi,6779,Jaborandi
+3524303,Jaboticabal,6780,Jaboticabal
+3524402,Jacareí,6781,Jacareí
+3524501,Jaci,6782,Jaci
+3524600,Jacupiranga,6783,Jacupiranga
+3524709,Jaguariúna,6784,Jaguariúna
+3524808,Jales,6785,Jales
+3524907,Jambeiro,6786,Jambeiro
+3525003,Jandira,6787,Jandira
+3525102,Jardinópolis,6788,Jardinópolis
+3525201,Jarinu,6789,Jarinu
+3525300,Jaú,6790,Jaú
+3525409,Jeriquara,6791,Jeriquara
+3525508,Joanópolis,6792,Joanópolis
+3525607,João Ramalho,6793,João Ramalho
+3525706,José Bonifácio,6794,José Bonifácio
+3525805,Júlio Mesquita,6795,Júlio Mesquita
+3525854,Jumirim,6796,Jumirim
+3525904,Jundiaí,6797,Jundiaí
+3526001,Junqueirópolis,6798,Junqueirópolis
+3526100,Juquiá,6799,Juquiá
+3526209,Juquitiba,6800,Juquitiba
+3526308,Lagoinha,6801,Lagoinha
+3526407,Laranjal Paulista,6802,Laranjal Paulista
+3526506,Lavínia,6803,Lavínia
+3526605,Lavrinhas,6804,Lavrinhas
+3526704,Leme,6805,Leme
+3526803,Lençóis Paulista,6806,Lençóis Paulista
+3526902,Limeira,6807,Limeira
+3527009,Lindóia,6808,Lindóia
+3527108,Lins,6809,Lins
+3527207,Lorena,6810,Lorena
+3527256,Lourdes,6811,Lourdes
+3527306,Louveira,6812,Louveira
+3527405,Lucélia,6813,Lucélia
+3527504,Lucianópolis,6814,Lucianópolis
+3527603,Luiz Antônio,6815,Luiz Antônio
+3527702,Luiziânia,6816,Luiziânia
+3527801,Lupércio,6817,Lupércio
+3527900,Lutécia,6818,Lutécia
+3528007,Macatuba,6819,Macatuba
+3528106,Macaubal,6820,Macaubal
+3528205,Macedônia,6821,Macedônia
+3528304,Magda,6822,Magda
+3528403,Mairinque,6823,Mairinque
+3528502,Mairiporã,6824,Mairiporã
+3528601,Manduri,6825,Manduri
+3528700,Marabá Paulista,6826,Marabá Paulista
+3528809,Maracaí,6827,Maracaí
+3528858,Marapoama,6828,Marapoama
+3528908,Mariápolis,6829,Mariápolis
+3529005,Marília,6830,Marília
+3529104,Marinópolis,6831,Marinópolis
+3529203,Martinópolis,6832,Martinópolis
+3529302,Matão,6833,Matão
+3529401,Mauá,6834,Mauá
+3529500,Mendonça,6835,Mendonça
+3529609,Meridiano,6836,Meridiano
+3529658,Mesópolis,6837,Mesópolis
+3529708,Miguelópolis,6838,Miguelópolis
+3529807,Mineiros do Tietê,6839,Mineiros do Tietê
+3530003,Mira Estrela,6841,Mira Estrela
+3529906,Miracatu,6840,Miracatu
+3530102,Mirandópolis,6842,Mirandópolis
+3530201,Mirante do Paranapanema,6843,Mirante do Paranapanema
+3530300,Mirassol,6844,Mirassol
+3530409,Mirassolândia,6845,Mirassolândia
+3530508,Mococa,6846,Mococa
+3530706,Mogi Guaçu,6848,Mogi Guaçu
+3530607,Mogi das Cruzes,6847,Mogi das Cruzes
+3530805,Mogi Mirim,6849,Mogi Mirim
+3530904,Mombuca,6850,Mombuca
+3531001,Monções,6851,Monções
+3531100,Mongaguá,6852,Mongaguá
+3531209,Monte Alegre do Sul,6853,Monte Alegre do Sul
+3531308,Monte Alto,6854,Monte Alto
+3531407,Monte Aprazível,6855,Monte Aprazível
+3531506,Monte Azul Paulista,6856,Monte Azul Paulista
+3531605,Monte Castelo,6857,Monte Castelo
+3531803,Monte Mor,6859,Monte Mor
+3531704,Monteiro Lobato,6858,Monteiro Lobato
+3531902,Morro Agudo,6860,Morro Agudo
+3532009,Morungaba,6861,Morungaba
+3532058,Motuca,6862,Motuca
+3532108,Murutinga do Sul,6863,Murutinga do Sul
+3532157,Nantes,6864,Nantes
+3532207,Narandiba,6865,Narandiba
+3532306,Natividade da Serra,6866,Natividade da Serra
+3532405,Nazaré Paulista,6867,Nazaré Paulista
+3532504,Neves Paulista,6868,Neves Paulista
+3532603,Nhandeara,6869,Nhandeara
+3532702,Nipoã,6870,Nipoã
+3532801,Nova Aliança,6871,Nova Aliança
+3532827,Nova Campina,6872,Nova Campina
+3532843,Nova Canaã Paulista,6873,Nova Canaã Paulista
+3532868,Nova Castilho,6874,Nova Castilho
+3532900,Nova Europa,6875,Nova Europa
+3533007,Nova Granada,6876,Nova Granada
+3533106,Nova Guataporanga,6877,Nova Guataporanga
+3533205,Nova Independência,6878,Nova Independência
+3533304,Nova Luzitânia,6880,Nova Luzitânia
+3533403,Nova Odessa,6881,Nova Odessa
+3533254,Novais,6879,Novais
+3533502,Novo Horizonte,6882,Novo Horizonte
+3533601,Nuporanga,6883,Nuporanga
+3533700,Ocauçu,6884,Ocauçu
+3533809,Óleo,6885,Óleo
+3533908,Olímpia,6886,Olímpia
+3534005,Onda Verde,6887,Onda Verde
+3534104,Oriente,6888,Oriente
+3534203,Orindiúva,6889,Orindiúva
+3534302,Orlândia,6890,Orlândia
+3534401,Osasco,6891,Osasco
+3534500,Oscar Bressane,6892,Oscar Bressane
+3534609,Osvaldo Cruz,6893,Osvaldo Cruz
+3534708,Ourinhos,6894,Ourinhos
+3534807,Ouro Verde,6896,Ouro Verde
+3534757,Ouroeste,6895,Ouroeste
+3534906,Pacaembu,6897,Pacaembu
+3535002,Palestina,6898,Palestina
+3535101,Palmares Paulista,6899,Palmares Paulista
+3535200,Palmeira d'Oeste,6900,Palmeira d'Oeste
+3535309,Palmital,6901,Palmital
+3535408,Panorama,6902,Panorama
+3535507,Paraguaçu Paulista,6903,Paraguaçu Paulista
+3535606,Paraibuna,6904,Paraibuna
+3535705,Paraíso,6905,Paraíso
+3535804,Paranapanema,6906,Paranapanema
+3535903,Paranapuã,6907,Paranapuã
+3536000,Parapuã,6908,Parapuã
+3536109,Pardinho,6909,Pardinho
+3536208,Pariquera-Açu,6910,Pariquera-Açu
+3536257,Parisi,6911,Parisi
+3536307,Patrocínio Paulista,6912,Patrocínio Paulista
+3536406,Paulicéia,6913,Paulicéia
+3536505,Paulínia,6914,Paulínia
+3536570,Paulistânia,6915,Paulistânia
+3536604,Paulo de Faria,6916,Paulo de Faria
+3536703,Pederneiras,6917,Pederneiras
+3536802,Pedra Bela,6918,Pedra Bela
+3536901,Pedranópolis,6919,Pedranópolis
+3537008,Pedregulho,6920,Pedregulho
+3537107,Pedreira,6921,Pedreira
+3537156,Pedrinhas Paulista,6922,Pedrinhas Paulista
+3537206,Pedro de Toledo,6923,Pedro de Toledo
+3537305,Penápolis,6924,Penápolis
+3537404,Pereira Barreto,6925,Pereira Barreto
+3537503,Pereiras,6926,Pereiras
+3537602,Peruíbe,6927,Peruíbe
+3537701,Piacatu,6928,Piacatu
+3537800,Piedade,6929,Piedade
+3537909,Pilar do Sul,6930,Pilar do Sul
+3538006,Pindamonhangaba,6931,Pindamonhangaba
+3538105,Pindorama,6932,Pindorama
+3538204,Pinhalzinho,6933,Pinhalzinho
+3538303,Piquerobi,6934,Piquerobi
+3538501,Piquete,6935,Piquete
+3538600,Piracaia,6936,Piracaia
+3538709,Piracicaba,6937,Piracicaba
+3538808,Piraju,6938,Piraju
+3538907,Pirajuí,6939,Pirajuí
+3539004,Pirangi,6940,Pirangi
+3539103,Pirapora do Bom Jesus,6941,Pirapora do Bom Jesus
+3539202,Pirapozinho,6942,Pirapozinho
+3539301,Pirassununga,6943,Pirassununga
+3539400,Piratininga,6944,Piratininga
+3539509,Pitangueiras,6945,Pitangueiras
+3539608,Planalto,6946,Planalto
+3539707,Platina,6947,Platina
+3539806,Poá,6948,Poá
+3539905,Poloni,6949,Poloni
+3540002,Pompéia,6950,Pompéia
+3540101,Pongaí,6951,Pongaí
+3540200,Pontal,6952,Pontal
+3540259,Pontalinda,6953,Pontalinda
+3540309,Pontes Gestal,6954,Pontes Gestal
+3540408,Populina,6955,Populina
+3540507,Porangaba,6956,Porangaba
+3540606,Porto Feliz,6957,Porto Feliz
+3540705,Porto Ferreira,6958,Porto Ferreira
+3540754,Potim,6959,Potim
+3540804,Potirendaba,6960,Potirendaba
+3540853,Pracinha,6961,Pracinha
+3540903,Pradópolis,6962,Pradópolis
+3541000,Praia Grande,6963,Praia Grande
+3541059,Pratânia,6964,Pratânia
+3541109,Presidente Alves,6965,Presidente Alves
+3541208,Presidente Bernardes,6966,Presidente Bernardes
+3541307,Presidente Epitácio,6967,Presidente Epitácio
+3541406,Presidente Prudente,6968,Presidente Prudente
+3541505,Presidente Venceslau,6969,Presidente Venceslau
+3541604,Promissão,6970,Promissão
+3541653,Quadra,6971,Quadra
+3541703,Quatá,6972,Quatá
+3541802,Queiroz,6973,Queiroz
+3541901,Queluz,6974,Queluz
+3542008,Quintana,6975,Quintana
+3542107,Rafard,6976,Rafard
+3542206,Rancharia,6977,Rancharia
+3542305,Redenção da Serra,6978,Redenção da Serra
+3542404,Regente Feijó,6979,Regente Feijó
+3542503,Reginópolis,6980,Reginópolis
+3542602,Registro,6981,Registro
+3542701,Restinga,6982,Restinga
+3542800,Ribeira,6983,Ribeira
+3542909,Ribeirão Bonito,6984,Ribeirão Bonito
+3543006,Ribeirão Branco,6985,Ribeirão Branco
+3543105,Ribeirão Corrente,6986,Ribeirão Corrente
+3543204,Ribeirão do Sul,6987,Ribeirão do Sul
+3543238,Ribeirão dos Índios,6988,Ribeirão dos Índios
+3543253,Ribeirão Grande,6989,Ribeirão Grande
+3543303,Ribeirão Pires,6990,Ribeirão Pires
+3543402,Ribeirão Preto,6991,Ribeirão Preto
+3543600,Rifaina,6993,Rifaina
+3543709,Rincão,6994,Rincão
+3543808,Rinópolis,6995,Rinópolis
+3543907,Rio Claro,6996,Rio Claro
+3544004,Rio das Pedras,6997,Rio das Pedras
+3544103,Rio Grande da Serra,6998,Rio Grande da Serra
+3544202,Riolândia,6999,Riolândia
+3543501,Riversul,6992,Riversul
+3544251,Rosana,7000,Rosana
+3544301,Roseira,7001,Roseira
+3544400,Rubiácea,7002,Rubiácea
+3544509,Rubinéia,7003,Rubinéia
+3544608,Sabino,7004,Sabino
+3544707,Sagres,7005,Sagres
+3544806,Sales,7006,Sales
+3544905,Sales Oliveira,7007,Sales Oliveira
+3545001,Salesópolis,7008,Salesópolis
+3545100,Salmourão,7009,Salmourão
+3545159,Saltinho,7010,Saltinho
+3545209,Salto,7011,Salto
+3545308,Salto de Pirapora,7012,Salto de Pirapora
+3545407,Salto Grande,7013,Salto Grande
+3545506,Sandovalina,7014,Sandovalina
+3545605,Santa Adélia,7015,Santa Adélia
+3545704,Santa Albertina,7016,Santa Albertina
+3545803,Santa Bárbara d'Oeste,7017,Santa Bárbara d'Oeste
+3546009,Santa Branca,7018,Santa Branca
+3546108,Santa Clara d'Oeste,7019,Santa Clara d'Oeste
+3546207,Santa Cruz da Conceição,7020,Santa Cruz da Conceição
+3546256,Santa Cruz da Esperança,7021,Santa Cruz da Esperança
+3546306,Santa Cruz das Palmeiras,7022,Santa Cruz das Palmeiras
+3546405,Santa Cruz do Rio Pardo,7023,Santa Cruz do Rio Pardo
+3546504,Santa Ernestina,7024,Santa Ernestina
+3546603,Santa Fé do Sul,7025,Santa Fé do Sul
+3546702,Santa Gertrudes,7026,Santa Gertrudes
+3546801,Santa Isabel,7027,Santa Isabel
+3546900,Santa Lúcia,7028,Santa Lúcia
+3547007,Santa Maria da Serra,7029,Santa Maria da Serra
+3547106,Santa Mercedes,7030,Santa Mercedes
+3547502,Santa Rita do Passa Quatro,7034,Santa Rita do Passa Quatro
+3547403,Santa Rita d'Oeste,7033,Santa Rita d'Oeste
+3547601,Santa Rosa de Viterbo,7035,Santa Rosa de Viterbo
+3547650,Santa Salete,7036,Santa Salete
+3547205,Santana da Ponte Pensa,7031,Santana da Ponte Pensa
+3547304,Santana de Parnaíba,7032,Santana de Parnaíba
+3547700,Santo Anastácio,7037,Santo Anastácio
+3547809,Santo André,7038,Santo André
+3547908,Santo Antônio da Alegria,7039,Santo Antônio da Alegria
+3548005,Santo Antônio de Posse,7040,Santo Antônio de Posse
+3548054,Santo Antônio do Aracanguá,7041,Santo Antônio do Aracanguá
+3548104,Santo Antônio do Jardim,7042,Santo Antônio do Jardim
+3548203,Santo Antônio do Pinhal,7043,Santo Antônio do Pinhal
+3548302,Santo Expedito,7044,Santo Expedito
+3548401,Santópolis do Aguapeí,7045,Santópolis do Aguapeí
+3548500,Santos,7046,Santos
+3548609,São Bento do Sapucaí,7047,São Bento do Sapucaí
+3548708,São Bernardo do Campo,7048,São Bernardo do Campo
+3548807,São Caetano do Sul,7049,São Caetano do Sul
+3548906,São Carlos,7050,São Carlos
+3549003,São Francisco,7051,São Francisco
+3549102,São João da Boa Vista,7052,São João da Boa Vista
+3549201,São João das Duas Pontes,7053,São João das Duas Pontes
+3549250,São João de Iracema,7054,São João de Iracema
+3549300,São João do Pau d'Alho,7055,São João do Pau d'Alho
+3549409,São Joaquim da Barra,7056,São Joaquim da Barra
+3549508,São José da Bela Vista,7057,São José da Bela Vista
+3549607,São José do Barreiro,7058,São José do Barreiro
+3549706,São José do Rio Pardo,7059,São José do Rio Pardo
+3549805,São José do Rio Preto,7060,São José do Rio Preto
+3549904,São José dos Campos,7061,São José dos Campos
+3549953,São Lourenço da Serra,7062,São Lourenço da Serra
+3550001,São Luiz do Paraitinga,7063,São Luiz do Paraitinga
+3550100,São Manuel,7064,São Manuel
+3550209,São Miguel Arcanjo,7065,São Miguel Arcanjo
+3550308,São Paulo,7066,São Paulo
+3550407,São Pedro,7067,São Pedro
+3550506,São Pedro do Turvo,7068,São Pedro do Turvo
+3550605,São Roque,7069,São Roque
+3550704,São Sebastião,7070,São Sebastião
+3550803,São Sebastião da Grama,7071,São Sebastião da Grama
+3550902,São Simão,7072,São Simão
+3551009,São Vicente,7073,São Vicente
+3551108,Sarapuí,7074,Sarapuí
+3551207,Sarutaiá,7075,Sarutaiá
+3551306,Sebastianópolis do Sul,7076,Sebastianópolis do Sul
+3551405,Serra Azul,7077,Serra Azul
+3551603,Serra Negra,7079,Serra Negra
+3551504,Serrana,7078,Serrana
+3551702,Sertãozinho,7080,Sertãozinho
+3551801,Sete Barras,7081,Sete Barras
+3551900,Severínia,7082,Severínia
+3552007,Silveiras,7083,Silveiras
+3552106,Socorro,7084,Socorro
+3552205,Sorocaba,7085,Sorocaba
+3552304,Sud Mennucci,7086,Sud Mennucci
+3552403,Sumaré,7087,Sumaré
+3552551,Suzanápolis,7089,Suzanápolis
+3552502,Suzano,7088,Suzano
+3552601,Tabapuã,7090,Tabapuã
+3552700,Tabatinga,7091,Tabatinga
+3552809,Taboão da Serra,7092,Taboão da Serra
+3552908,Taciba,7093,Taciba
+3553005,Taguaí,7094,Taguaí
+3553104,Taiaçu,7095,Taiaçu
+3553203,Taiúva,7096,Taiúva
+3553302,Tambaú,7097,Tambaú
+3553401,Tanabi,7098,Tanabi
+3553500,Tapiraí,7099,Tapiraí
+3553609,Tapiratiba,7100,Tapiratiba
+3553658,Taquaral,7101,Taquaral
+3553708,Taquaritinga,7102,Taquaritinga
+3553807,Taquarituba,7103,Taquarituba
+3553856,Taquarivaí,7104,Taquarivaí
+3553906,Tarabai,7105,Tarabai
+3553955,Tarumã,7106,Tarumã
+3554003,Tatuí,7107,Tatuí
+3554102,Taubaté,7108,Taubaté
+3554201,Tejupá,7109,Tejupá
+3554300,Teodoro Sampaio,7110,Teodoro Sampaio
+3554409,Terra Roxa,7111,Terra Roxa
+3554508,Tietê,7112,Tietê
+3554607,Timburi,7113,Timburi
+3554656,Torre de Pedra,7114,Torre de Pedra
+3554706,Torrinha,7115,Torrinha
+3554755,Trabiju,7116,Trabiju
+3554805,Tremembé,7117,Tremembé
+3554904,Três Fronteiras,7118,Três Fronteiras
+3554953,Tuiuti,7119,Tuiuti
+3555000,Tupã,7120,Tupã
+3555109,Tupi Paulista,7121,Tupi Paulista
+3555208,Turiúba,7122,Turiúba
+3555307,Turmalina,7123,Turmalina
+3555356,Ubarana,7124,Ubarana
+3555406,Ubatuba,7125,Ubatuba
+3555505,Ubirajara,7126,Ubirajara
+3555604,Uchoa,7127,Uchoa
+3555703,União Paulista,7128,União Paulista
+3555802,Urânia,7129,Urânia
+3555901,Uru,7130,Uru
+3556008,Urupês,7131,Urupês
+3556107,Valentim Gentil,7132,Valentim Gentil
+3556206,Valinhos,7133,Valinhos
+3556305,Valparaíso,7134,Valparaíso
+3556354,Vargem,7135,Vargem
+3556404,Vargem Grande do Sul,7136,Vargem Grande do Sul
+3556453,Vargem Grande Paulista,7137,Vargem Grande Paulista
+3556503,Várzea Paulista,7138,Várzea Paulista
+3556602,Vera Cruz,7139,Vera Cruz
+3556701,Vinhedo,7140,Vinhedo
+3556800,Viradouro,7141,Viradouro
+3556909,Vista Alegre do Alto,7142,Vista Alegre do Alto
+3556958,Vitória Brasil,7143,Vitória Brasil
+3557006,Votorantim,7144,Votorantim
+3557105,Votuporanga,7145,Votuporanga
+3557154,Zacarias,7146,Zacarias

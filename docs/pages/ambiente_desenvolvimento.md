@@ -6,7 +6,7 @@ O gerenciamento de pacotes é feito pelo [UV]()
 # Ativa ambiente
 .venv\Scripts\activate
 
-
+uv sync --group docs
 deactivate
 ```
 

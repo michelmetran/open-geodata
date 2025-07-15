@@ -3,9 +3,7 @@
 [![Repo](https://img.shields.io/badge/GitHub-repo-blue?logo=github&logoColor=f5f5f5)](https://github.com/michelmetran/open-geodata)
 [![PyPI - Version](https://img.shields.io/pypi/v/open-geodata?logo=pypi&label=PyPI&color=blue)](https://pypi.org/project/open-geodata/)\
 [![Read the Docs](https://img.shields.io/readthedocs/open-geodata?logo=ReadTheDocs&label=Read%20The%20Docs)](https://open-geodata.readthedocs.io/pt/latest/)
-[![Publish Python to PyPI](https://github.com/michelmetran/open-geodata/actions/workflows/publish-to-pypipoetry.yml/badge.svg)](https://github.com/open-geodata/open-geodata/actions/workflows/publish-to-pypipoetry.yml)
-
-<br>
+[![Publish Python to PyPI](https://github.com/michelmetran/open-geodata/actions/workflows/publish-to-pypi-uv.yml/badge.svg)](https://github.com/michelmetran/open-geodata/actions/workflows/publish-to-pypi-uv.yml)
 
 O **_OpenGeodata_** tem como objetivo disponibilizar dados espaciais para pequenos projetos. A concepção é que ter os
 dados localmente pode ser mais interessante (e barato!) que manter dados em servidores.\
@@ -17,7 +15,7 @@ Alguns dos dados básicos disponíveis no pacote são:
 
 <br>
 
-O projeto disponibiliza poucos dados, tendo em vista a limitação de 100mb do repositório oficial [PyPi](https://pypi.org/). É possível
+O projeto disponibiliza poucos dados, tendo em vista a limitação de 100mb do repositório oficial [PyPI](https://pypi.org/). É possível
 acessar outros dados instalando pacotes adicionais listados no [wiki/Dados](https://github.com/open-geodata/open-geodata/wiki/Dados)
 
 > Para mais informações, ver [**Wiki**](https://github.com/open-geodata/open-geodata/wiki)
@@ -26,6 +24,16 @@ acessar outros dados instalando pacotes adicionais listados no [wiki/Dados](http
 
 Para possibilitar testes do pacote, criei um [Google Colab](https://colab.research.google.com/drive/1s_w9t599OstJ0KS99NusH2EVGYa5twMh?usp=sharing).<br>
 Todos os _datasets_ estão com _datum_ WGS84 (EPSG: 4326).
+
+<br>
+
+```shell
+# Ativa
+.venv\Scripts\activate
+source .venv/bin/activate # Linux
+
+mkdocs server
+```
 
 <br>
 

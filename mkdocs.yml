@@ -16,38 +16,60 @@ site_dir: "site" # Default site
 # Opcional
 nav:
   - Home: index.md
-  - Como Instalar?: pages/como_instalar.md
-  - Como Usar?:
-      - Exemplos: pages/como_usar.md
-      - Funções: pages/funções.md
-      - Ambiente de Desenvolvimento: pages/ambiente_desenvolvimento.md
+  - GeoServer: geoserver.md
+
   - Dados (Brasil):
       - BR.ANM: pages/dados/br/amn.md
       - BR.ANM (class): pages/dados/br/amn_class.ipynb
       - BR.ANM (pooch): pages/dados/br/amn_pooch.ipynb
       - BR.ANEEL: pages/dados/br/aneel.md
+      - BR.ANEEL (ArcGIS): pages/dados/br/aneel.ipynb
       - BR.BDGEx: pages/dados/br/bdgex.md
-      - BR.SNISB: pages/dados/br/snisb.md
       - BR.DNIT: pages/dados/br/dnit.md
+      - BR.DNIT (GeoServer): pages/dados/br/dnit_geoserver.ipynb
+      - BR.FUNAI (GeoServer): pages/dados/br/funai_geoserver.ipynb
       - BR.IBGE (class): pages/dados/br/ibge_class.ipynb
+      - BR.IBGE (GeoServer): pages/dados/br/ibge_geoserver.ipynb
       - BR.IBGE (pooch): pages/dados/br/ibge_pooch.ipynb
+      - BR.INPE (GeoServer): pages/dados/br/inpe_geoserver.ipynb
+      - BR.INDE (GeoServer): pages/dados/br/inde_geoserver.ipynb
+      - BR.IPHAN (GeoServer): pages/dados/br/iphan_geoserver.ipynb
       - BR.MapBiomas: pages/dados/br/map_biomas.ipynb
+      - BR.MDR (GeoServer): pages/dados/br/mdr_geoserver.ipynb
       - BR.SFB (exemplos): pages/dados/br/sfb.ipynb
+      - BR.SFB (GeoServer): pages/dados/br/sfb_geoserver.ipynb
+      - BR.SNISB: pages/dados/br/snisb.md
+
   - Dados (São Paulo):
       - SP.CATI: pages/dados/sp/cati.md
       - SP.CATI - Urbanizado (2016): pages/dados/sp/cati_exemplo.ipynb
       - SP.CETESB: pages/dados/sp/cetesb.md
       - SP.CETESB (exemplos): pages/dados/sp/cetesb_divamin.ipynb
+      - SP.DAEE: pages/dados/sp/daee_geonode.ipynb
+      - SP.DataGeo (GeoServer): pages/dados/sp/datageo_geoserver.ipynb
       - SP.Defesa Civil: pages/dados/sp/defesa_civil_divamin.ipynb
       - SP.MPSP: pages/dados/sp/mpsp.ipynb
       - SP.SP: pages/dados/sp/sp.ipynb
+      - SP.TJSP: pages/dados/sp/tjsp.ipynb
+
+  - Dados (Paraná):
+      - PR.CELEPAR (GeoServer): pages/dados/pr/celepar_geoserver.ipynb
+
+  - Dados (Espírito Santo):
+      - ES.Geobases (GeoServer): pages/dados/es/geobases_geoserver.ipynb
+
   - Outros:
       - Atlas Rural de Piracicbaa: pages/dados/outros/sp_atlas_rural_piracicaba.ipynb
       - APA Corumbataí: pages/dados/outros/sp_ff_apa_corumbatai.ipynb
+      - Santos, SP (GeoServer): pages/dados/outros/santos_geoserver.ipynb
       - Piracicaba: pages/dados/outros/sp_piracicaba.ipynb
       - Plano das Bacias PCJ 2020-2035: pages/dados/outros/sp_bh_pcj_2020_2035.ipynb
       - Plano da Bacia Hidrográfica do Alto Tietê (2018): pages/dados/outros/sp_bh_at.ipynb
       - Outros Dados: pages/dados/outros_dados.md
+
+  - Como Usar?:
+      - Funções: pages/funções.md
+      - Ambiente de Desenvolvimento: pages/ambiente_desenvolvimento.md
 
   #     - Gerenciamento de Perfil: scripts/gerenciamento_perfil.ipynb
   #     - Consulta de Processos: scripts/consulta_processo.ipynb
@@ -133,6 +155,12 @@ markdown_extensions:
   # https://pypi.org/project/mkdocs-pdf/
   - attr_list
 
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
   - toc:
       permalink: true
       separator: "_"
@@ -181,6 +209,9 @@ plugins:
   # https://pypi.org/project/mkdocs-pdf/
   - mkdocs-pdf
 
+  # https://mkdocs-mermaid2.readthedocs.io/en/latest/#configuration
+  #- mermaid2
+
 extra:
   analytics:
     provider: google
@@ -197,3 +228,8 @@ extra:
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-versioning/#versioning
   version:
     provider: mike
+
+extra_javascript:
+  #- optionalConfig.js
+  - https://cdn.jsdelivr.net/npm/mermaid@11.5.0/dist/mermaid.min.js
+  #- extra-loader.js
