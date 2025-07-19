@@ -24,16 +24,45 @@ Ainda, a documentação é parte fundamental da biblioteca _Open Geodata_, onde 
 
     Sempre colecionei dados espaciais e, inclusive, estudava como implantar o meu próprio [GeoServer](https://geoserver.org/). Fui vivenciando os problemas de ter dados espaciais armazenados: ocupam muito espaço e rapidamente ficam desatualizados.
 
-    Passei a estudar maneiras de mante-los atualizados e, com isso, conheci as potencialidades do *python*. Mantinha os dados e rotinas de atualização, algumas delas disponíveis no [projeto *Open Geodata*](https://github.com/open-geodata).
-    Passado algum tempo observei que a minha real necessidade era ter apenas a rotina de atualização, obtendo o dado mais atualizado, para o uso pontual (sem consistir o dado no meu HD / sem armazena-lo): iniciei o desenvolvimento da [biblioteca *Open Geodata*](https://github.com/michelmetran/open-geodata).
+    Passei a estudar maneiras de mante-los atualizados e, com isso, conheci as potencialidades do *python*. Mantinha os dados e rotinas de atualização, algumas delas disponíveis no [Projeto *Open Geodata*](https://github.com/open-geodata).
+    Passado algum tempo observei que a minha real necessidade era ter apenas a rotina de atualização, obtendo o dado mais atualizado, para o uso pontual (sem consistir o dado no meu HD / sem armazena-lo): iniciei o desenvolvimento da [Biblioteca *Open Geodata*](https://github.com/michelmetran/open-geodata).
 
     ... uma longa trajetória, iniciada muito tempo atrás, quando se comprava "cartas do [Instituto Geográfico e Cartográfico](https://www.igc.sp.gov.br/)" na papelaria da faculdade, com *pen drive*: *good ol' days!*
 
 <br>
 
+---
+
+## Como Contribuir?
+
 Alguma dúvida, sugestão e/ou contribuição, favor reportar um [problema/_issue_](https://github.com/michelmetran/open-geodata/issues) ou abrir um tópico de [discussão](https://github.com/michelmetran/open-geodata/discussions).
 
+É possível também criar um [pull request](https://github.com/michelmetran/open-geodata/pulls) para contrubuir diretamente com o desenvolvimento da biblioteca.
+
 <br>
+
+---
+
+## Como Instalar?
+
+O pacote está disponível no repositório oficial do _python_: [PyPI](https://pypi.org/project/open-geodata/).
+
+```shell
+# Instala usando pip
+pip3 install open-geodata --upgrade
+
+# Instala usando uv
+uv add open-geodata
+
+# Instala usando uv
+poetry add open-geodata
+```
+
+<br>
+
+---
+
+## Diagrama
 
 ```mermaid
 flowchart LR
@@ -51,26 +80,8 @@ flowchart LR
 
 ---
 
-## Como instalar
-
-O pacote está disponível no repositório oficial do _python_: [PyPI](https://pypi.org/project/open-geodata/).
-
-```shell
-# Instala usando pip
-pip3 install open-geodata --upgrade
-
-# Instala usando uv
-uv add open-geodata
-
-# Instala usando uv
-poetry add open-geodata
-```
-
-<br>
-
 <body>
     <div style="text-align:center;">
-        Centered Content (width reduced for illustrative purposes in SO)
         ```mermaid
         ---
         config:

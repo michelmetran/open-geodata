@@ -1,6 +1,6 @@
 [project]
 name = "open-geodata"
-version = "23.0.14"
+version = "23.0.15"
 description = "Dados Espaciais do Brasil"
 authors = [{ name = "michelmetran", email = "michelmetran@gmail.com" }]
 keywords = ["geodata", "geoprocessamento", "github", "utility"]
@@ -11,12 +11,14 @@ dependencies = [
     #"arcgis==2.4.1.1",
     "bmi-arcgis-restapi>=2.4.13",
     "earthengine-api>=1.5.19",
+    "fiona>=1.10.1",
     "folium>=0.19.7",
     "geemap>=0.35.3",
     "geopandas>=1.1.0",
     "mapclassify>=2.9.0",
     "matplotlib>=3.10.3",
     "more-itertools>=10.7.0",
+    "openpyxl>=3.1.5",
     "owslib>=0.34.1",
     "pandas>=2.3.0",
     "pooch>=1.8.2",

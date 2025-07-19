@@ -1,0 +1,18 @@
+{
+  "geo": {
+    "Polígono CNUC 2025_03": {
+      "url": "https://dados.mma.gov.br/dataset/44b6dc8a-dc82-4a84-8d95-1b0da7c85dac/resource/20327e02-d4fe-4a1b-bd12-e381ab461d97/download/shp_cnuc_2025_03.zip",
+      "hash": null,
+      "description": "Shapefiles das Unidades de Conservação com registro ativo no CNUC em março de 2025.",
+      "details": "https://dados.gov.br/dados/conjuntos-dados/unidadesdeconservacao"
+    }
+  },
+  "tab": {
+    "CNUC_2025_1º semestre": {
+      "url": "https://dados.mma.gov.br/dataset/44b6dc8a-dc82-4a84-8d95-1b0da7c85dac/resource/f6bf9940-cf30-4ef2-927d-2bd278e4c8af/download/cnuc_2025_03.csv",
+      "hash": null,
+      "description": "Lista das UCs ativas no CNUC com respectivas categorias de manejo, área, esfera de governo, ano de criação e outras informações. Dados atualizados até março/2025.",
+      "details": "https://dados.gov.br/dados/conjuntos-dados/unidadesdeconservacao"
+    }
+  }
+}

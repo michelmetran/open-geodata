@@ -1,4 +1,4 @@
-# BR DNIT
+# Departamento Nacional de Infraestrutura de Transportes (DNIT)
 
 Bases de Dados de Sistema Viário
 

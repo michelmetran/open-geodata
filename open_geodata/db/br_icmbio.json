@@ -1,0 +1,52 @@
+{
+  "admin": {
+    "limite_gerências_regionais_icmbio": {
+      "url": "https://www.gov.br/icmbio/pt-br/assuntos/dados_geoespaciais/mapa-tematico-e-dados-geoestatisticos-das-unidades-de-conservacao-federais/Gerencias_Regionais_poligono.zip",
+      "hash": null,
+      "description": "Limite das Gerências Regionais do ICMBio",
+      "details": "https://www.gov.br/icmbio/pt-br/assuntos/dados_geoespaciais/mapa-tematico-e-dados-geoestatisticos-das-unidades-de-conservacao-federais"
+    },
+    "sedes_bases_gerências_regionais": {
+      "url": "https://www.gov.br/icmbio/pt-br/assuntos/dados_geoespaciais/mapa-tematico-e-dados-geoestatisticos-das-unidades-de-conservacao-federais/pontos_GRs_sedes_bases.rar",
+      "hash": null,
+      "description": "Localização das sedes e bases das Gerências Regionais - shp",
+      "details": "https://www.gov.br/icmbio/pt-br/assuntos/dados_geoespaciais/mapa-tematico-e-dados-geoestatisticos-das-unidades-de-conservacao-federais"
+    },
+    "sedes_bases_centros_nacionais_pesquisa_conservação": {
+      "url": "https://www.gov.br/icmbio/pt-br/assuntos/dados_geoespaciais/mapa-tematico-e-dados-geoestatisticos-das-unidades-de-conservacao-federais/Localizacao_CNPCs_Bases_Sedes_mar2023_p.rar",
+      "hash": null,
+      "description": "Localização das sedes e bases dos Centros Nacionais de Pesquisa e Conservação",
+      "details": "https://www.gov.br/icmbio/pt-br/assuntos/dados_geoespaciais/mapa-tematico-e-dados-geoestatisticos-das-unidades-de-conservacao-federais"
+    },
+    "centro_formacao_conservacao_biodiversidade": {
+      "url": "https://www.gov.br/icmbio/pt-br/assuntos/dados_geoespaciais/mapa-tematico-e-dados-geoestatisticos-das-unidades-de-conservacao-federais/ACADEBIO_shp.zip",
+      "hash": null,
+      "description": "Localização do Centro de Formação em Conservação da Biodiversidade (ACADEBio)",
+      "details": "https://www.gov.br/icmbio/pt-br/assuntos/dados_geoespaciais/mapa-tematico-e-dados-geoestatisticos-das-unidades-de-conservacao-federais"
+    }
+  },
+
+  "temáticos": {
+    "áreas_embargadas": {
+      "url": "https://www.gov.br/icmbio/pt-br/assuntos/dados_geoespaciais/mapa-tematico-e-dados-geoestatisticos-das-unidades-de-conservacao-federais/embargos_icmbio_shp.zip",
+      "hash": null,
+      "description": "Áreas Embargadas ICMBio",
+      "details": "https://www.gov.br/icmbio/pt-br/assuntos/dados_geoespaciais/mapa-tematico-e-dados-geoestatisticos-das-unidades-de-conservacao-federais"
+    },
+    "autos_infração": {
+      "url": "https://www.gov.br/icmbio/pt-br/assuntos/dados_geoespaciais/mapa-tematico-e-dados-geoestatisticos-das-unidades-de-conservacao-federais/autos_infracao_icmbio_shp.zip",
+      "hash": null,
+      "description": "Autos de Infração ICMBio - shp",
+      "details": "https://www.gov.br/icmbio/pt-br/assuntos/dados_geoespaciais/mapa-tematico-e-dados-geoestatisticos-das-unidades-de-conservacao-federais"
+    }
+  },
+
+  "tab": {
+    "ucs_dados": {
+      "url": "https://www.gov.br/icmbio/pt-br/assuntos/dados_geoespaciais/mapa-tematico-e-dados-geoestatisticos-das-unidades-de-conservacao-federais/DadosGeoestatisticos_UCs_18jun2025.xlsx",
+      "hash": null,
+      "description": "Lista: dados gerais das Unidades de Conservação Federais (Nome conforme ato legal, ano de criação, UF, Gerência, Área, dentre outros)",
+      "details": "https://www.gov.br/icmbio/pt-br/assuntos/dados_geoespaciais/mapa-tematico-e-dados-geoestatisticos-das-unidades-de-conservacao-federais"
+    }
+  }
+}

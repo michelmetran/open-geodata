@@ -1,3 +1,5 @@
+# Agência Nacional de Mineração
+
 A Agência Nacional de Mineração ([ANM](https://www.gov.br/anm/pt-br)) é uma autarquia federal, vinculada ao Ministério de Minas e Energia, responsável por regular, fiscalizar e promover o setor mineral brasileiro. Ela foi criada em 2017, substituindo o antigo Departamento Nacional de Produção Mineral (DNPM). Principais funções da ANM:
 
 - Emitir autorizações e concessões para pesquisa e lavra mineral.

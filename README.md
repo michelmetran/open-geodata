@@ -15,8 +15,7 @@ Alguns dos dados básicos disponíveis no pacote são:
 
 <br>
 
-O projeto disponibiliza poucos dados, tendo em vista a limitação de 100mb do repositório oficial [PyPI](https://pypi.org/). É possível
-acessar outros dados instalando pacotes adicionais listados no [wiki/Dados](https://github.com/open-geodata/open-geodata/wiki/Dados)
+O projeto disponibiliza poucos dados, tendo em vista a limitação de 100mb do repositório oficial [PyPI](https://pypi.org/). É possível acessar outros dados instalando pacotes adicionais listados no [wiki/Dados](https://github.com/open-geodata/open-geodata/wiki/Dados)
 
 > Para mais informações, ver [**Wiki**](https://github.com/open-geodata/open-geodata/wiki)
 
@@ -32,7 +31,8 @@ Todos os _datasets_ estão com _datum_ WGS84 (EPSG: 4326).
 .venv\Scripts\activate
 source .venv/bin/activate # Linux
 
-mkdocs server
+#
+mkdocs serve
 ```
 
 <br>

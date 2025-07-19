@@ -68,8 +68,10 @@ class ANM:
         :param filename: Name of the file to save in the cache directory.
         :return: Path to the downloaded file.
         """
-        # context2 = ssl.SSLContext()
+        # SSL
         ssl._create_default_https_context = ssl._create_unverified_context
+
+        # Iteração
         for i, row in self.layers.iterrows():
             if layer == row['nome']:
                 print(f'Downloading {row["nome"]}...')

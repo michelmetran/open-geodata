@@ -17,26 +17,32 @@ site_dir: "site" # Default site
 nav:
   - Home: index.md
   - GeoServer: geoserver.md
+  - Outros: outros.md
+  - Funções: pages/funções.md
+  - Ambiente de Desenvolvimento: pages/ambiente_desenvolvimento.md
 
   - Dados (Brasil):
       - BR.ANM: pages/dados/br/amn.md
-      - BR.ANM (class): pages/dados/br/amn_class.ipynb
-      - BR.ANM (pooch): pages/dados/br/amn_pooch.ipynb
+      - BR.ANM (Class): pages/dados/br/amn_class.ipynb
+      - BR.ANM (Pooch): pages/dados/br/amn_pooch.ipynb
       - BR.ANEEL: pages/dados/br/aneel.md
       - BR.ANEEL (ArcGIS): pages/dados/br/aneel.ipynb
       - BR.BDGEx: pages/dados/br/bdgex.md
+      - BR.CNUC (Pooch): pages/dados/br/cnuc_pooch.ipynb
       - BR.DNIT: pages/dados/br/dnit.md
       - BR.DNIT (GeoServer): pages/dados/br/dnit_geoserver.ipynb
       - BR.FUNAI (GeoServer): pages/dados/br/funai_geoserver.ipynb
-      - BR.IBGE (class): pages/dados/br/ibge_class.ipynb
+      - BR.IBAMA (GeoServer): pages/dados/br/ibama_geoserver.ipynb
+      - BR.ICMBio (Pooch): pages/dados/br/icmbio_pooch.ipynb
+      - BR.IBGE (Class): pages/dados/br/ibge_class.ipynb
       - BR.IBGE (GeoServer): pages/dados/br/ibge_geoserver.ipynb
-      - BR.IBGE (pooch): pages/dados/br/ibge_pooch.ipynb
+      - BR.IBGE (Pooch): pages/dados/br/ibge_pooch.ipynb
       - BR.INPE (GeoServer): pages/dados/br/inpe_geoserver.ipynb
       - BR.INDE (GeoServer): pages/dados/br/inde_geoserver.ipynb
       - BR.IPHAN (GeoServer): pages/dados/br/iphan_geoserver.ipynb
       - BR.MapBiomas: pages/dados/br/map_biomas.ipynb
       - BR.MDR (GeoServer): pages/dados/br/mdr_geoserver.ipynb
-      - BR.SFB (exemplos): pages/dados/br/sfb.ipynb
+      - BR.SFB (Exemplos): pages/dados/br/sfb.ipynb
       - BR.SFB (GeoServer): pages/dados/br/sfb_geoserver.ipynb
       - BR.SNISB: pages/dados/br/snisb.md
 
@@ -44,8 +50,8 @@ nav:
       - SP.CATI: pages/dados/sp/cati.md
       - SP.CATI - Urbanizado (2016): pages/dados/sp/cati_exemplo.ipynb
       - SP.CETESB: pages/dados/sp/cetesb.md
-      - SP.CETESB (exemplos): pages/dados/sp/cetesb_divamin.ipynb
-      - SP.DAEE: pages/dados/sp/daee_geonode.ipynb
+      - SP.CETESB (Exemplos): pages/dados/sp/cetesb_divamin.ipynb
+      - SP.DAEE: pages/dados/sp/daee_geoserver.ipynb
       - SP.DataGeo (GeoServer): pages/dados/sp/datageo_geoserver.ipynb
       - SP.Defesa Civil: pages/dados/sp/defesa_civil_divamin.ipynb
       - SP.MPSP: pages/dados/sp/mpsp.ipynb
@@ -67,9 +73,8 @@ nav:
       - Plano da Bacia Hidrográfica do Alto Tietê (2018): pages/dados/outros/sp_bh_at.ipynb
       - Outros Dados: pages/dados/outros_dados.md
 
-  - Como Usar?:
-      - Funções: pages/funções.md
-      - Ambiente de Desenvolvimento: pages/ambiente_desenvolvimento.md
+  - Rasters:
+      - Google Earth: google.ipynb
 
   #     - Gerenciamento de Perfil: scripts/gerenciamento_perfil.ipynb
   #     - Consulta de Processos: scripts/consulta_processo.ipynb
@@ -226,8 +231,8 @@ extra:
       link: https://twitter.com/michelmetran
 
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-versioning/#versioning
-  version:
-    provider: mike
+  # version:
+  #   provider: mike
 
 extra_javascript:
   #- optionalConfig.js

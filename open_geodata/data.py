@@ -3,17 +3,20 @@ sssss
 """
 
 import json
+import logging
 import pkgutil
-
+import shutil
 import tempfile
+import warnings
 from pathlib import Path
 from urllib.parse import quote, unquote, urlparse, urlunparse
+from zipfile import ZipFile
 
 import geopandas as gpd
 import pandas as pd
-from zipfile import ZipFile
 import pooch
 import py7zr
+import rarfile
 
 # import importlib.resources
 # import pprint
@@ -151,6 +154,8 @@ def load_dataset(db, name, *args, **kwargs) -> pd.DataFrame | gpd.GeoDataFrame:
     :param dataset_name:
     :return:
     """
+    #
+    shapefile = kwargs.get('shapefile')
 
     db_obj = DB(db=db)
 
@@ -160,7 +165,7 @@ def load_dataset(db, name, *args, **kwargs) -> pd.DataFrame | gpd.GeoDataFrame:
         list_data_str = '\n'.join(list_data)
         raise Exception(f'Deve ser um dado listado abaixo\n{list_data_str}')
 
-    #
+    # Faz download
     filepath = db_obj.get_data(name=name)
     # filename = dataset_name.replace('.', '/')
     # filename = Path(filename)
@@ -187,19 +192,34 @@ def load_dataset(db, name, *args, **kwargs) -> pd.DataFrame | gpd.GeoDataFrame:
         return db_obj.read_7z(name=name)
 
     # Se o arquivo é um
-    elif ext in ['.csv', '.xls', '.xlsx']:
-        return pd.read_csv(filepath_or_buffer=filepath)
+    elif ext in ['.csv']:
+        return pd.read_csv(filepath_or_buffer=filepath, **kwargs)
+
+    # Se o arquivo é um
+    elif ext in ['.xls', '.xlsx']:
+        return pd.read_excel(io=filepath, **kwargs)
 
     # Se o arquivo é um
     elif ext in ['.gpkg']:
-        return gpd.read_file(filename=filepath)
+        return gpd.read_file(filename=filepath, *args, **kwargs)
 
     elif ext in ['.zip']:
         with ZipFile(file=filepath) as zip_obj:
             for info in zip_obj.infolist():
                 if Path(info.filename).suffix.lower() == '.shp':
                     try:
-                        return gpd.read_file(filename=filepath)
+                        if shapefile is not None:
+                            # O Geopandas permite ler shape especifico em zipfile usando o ! como separador
+                            # gpd.read_file(filename='shp_cnuc_2025_03.zip!cnuc_2025_03.shp',
+                            return gpd.read_file(
+                                filename=f'{filepath}!{shapefile}',
+                                *args,
+                                **kwargs,
+                            )
+                        else:
+                            return gpd.read_file(
+                                filename=filepath, *args, **kwargs
+                            )
 
                     except Exception as e:
                         raise e
@@ -209,6 +229,42 @@ def load_dataset(db, name, *args, **kwargs) -> pd.DataFrame | gpd.GeoDataFrame:
 
             except Exception as e:
                 raise e
+
+    elif ext in ['.rar']:
+        # warnings.warn('Desenvolver!')
+        #  pass
+
+        # Salva
+        # Cria uma pasta temporária
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_dir = Path(temp_dir)
+
+            # Extrai tudo para a pasta temporária
+            with rarfile.RarFile(file=filepath) as rf:
+                rf.extractall(temp_dir)
+
+                # Se extrair pasta, move conteudo da pasta
+                list_files = list(temp_dir.rglob('*'))
+                for file in list_files:
+                    # print(Path(file))
+                    if file.is_file():
+                        try:
+                            shutil.move(src=file, dst=temp_dir)
+                            # print(file)
+
+                        except Exception as e:
+                            print(e)
+
+                # Carrega o shapefile no GeoDataFrame
+                list_shp = list(temp_dir.rglob('*.shp'))
+                if len(list_shp) == 1:
+                    return gpd.read_file(
+                        filename=list_shp[0],
+                        engine='fiona',
+                        driver='ESRI Shapefile',
+                    )
+                else:
+                    print('Definir o que fazer')
 
     else:
         raise Exception(f'Extensão {ext} não configurada.')
