@@ -1,4 +1,4 @@
-# ANEEL
+# Agência Nacional de Energia Elétrica
 
 O site da ANEEL apresenta uma sessão de [**Informações Geográficas**](https://www.aneel.gov.br/informacoes-geograficas). Analisando o material, costata-se que eles utilizam a estrutura do _ArcGIS Server_, em um portal denominado _Sistema de Informações Georreferenciadas do Setor Elétrico (SIGEL)_.
 
@@ -8,7 +8,7 @@ O site da ANEEL apresenta uma sessão de [**Informações Geográficas**](https:
 
 ---
 
-### Siglas
+## Siglas
 
 <br>
 

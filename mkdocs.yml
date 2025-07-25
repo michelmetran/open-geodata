@@ -26,10 +26,9 @@ nav:
       - BR.ANM (Class): pages/dados/br/amn_class.ipynb
       - BR.ANM (Pooch): pages/dados/br/amn_pooch.ipynb
       - BR.ANEEL: pages/dados/br/aneel.md
-      - BR.ANEEL (ArcGIS): pages/dados/br/aneel.ipynb
+      - BR.ANEEL (ArcGIS): pages/dados/br/aneel_arcgis.ipynb
       - BR.BDGEx: pages/dados/br/bdgex.md
       - BR.CNUC (Pooch): pages/dados/br/cnuc_pooch.ipynb
-      - BR.DNIT: pages/dados/br/dnit.md
       - BR.DNIT (GeoServer): pages/dados/br/dnit_geoserver.ipynb
       - BR.FUNAI (GeoServer): pages/dados/br/funai_geoserver.ipynb
       - BR.IBAMA (GeoServer): pages/dados/br/ibama_geoserver.ipynb

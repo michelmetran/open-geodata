@@ -5,7 +5,69 @@
 [![Read the Docs](https://img.shields.io/readthedocs/open-geodata?logo=ReadTheDocs&label=Read%20The%20Docs)](https://open-geodata.readthedocs.io/pt/latest/)
 [![Publish Python to PyPI](https://github.com/michelmetran/open-geodata/actions/workflows/publish-to-pypi-uv.yml/badge.svg)](https://github.com/michelmetran/open-geodata/actions/workflows/publish-to-pypi-uv.yml)
 
-O **_Open Geodata_** tem como objetivo facilitar o acesso à dados espaciais de instituições públicas e privadas do Brasil. O projeto agrega pacotes para obtenção de diferentes tipos de dados, bem como define funções e classes para obtenção de dados específicos.
+O **_Open Geodata_** tem como objetivo facilitar o acesso à dados espaciais de instituições públicas e privadas do Brasil. Algumas das instituições são apresentadas abaixo:
+
+<div align="center"> 
+<a href="./pages/dados/br/amn/" target="_blank">
+<img src="./assets/logos/logo-amn.png" width="150" height="150"/>
+</a>
+<a href="./pages/dados/br/aneel/" target="_blank">
+<img src="./assets/logos/logo-aneel.png" width="150" height="150"/>
+</a>
+<a href="./pages/dados/br/bdgex/" target="_blank">
+<img src="./assets/logos/logo-exercito.png" width="150" height="150"/>
+</a>
+<a href="./pages/dados/br/cnuc_pooch/" target="_blank">
+<img src="./assets/logos/logo-mma.jpg" width="150" height="150"/>
+</a>
+<a href="./pages/dados/br/dnit_geoserver/" target="_blank">
+<img src="./assets/logos/logo-dnit.png" width="150" height="150"/>
+</a>
+</div>
+
+<div align="center">
+<a href="./pages/dados/br/funai_geoserver/" target="_blank">
+<img src="./assets/logos/logo-funai.png" width="" height="150"/>
+</a>
+<a href="./pages/dados/br/ibama_geoserver/" target="_blank">
+<img src="./assets/logos/logo-ibama.png" width="" height="150"/>
+</a>
+<a href="./pages/dados/br/ibge_class/" target="_blank">
+<img src="./assets/logos/logo-ibge.png" width="" height="150"/>
+</a>
+<a href="./pages/dados/br/inpe_geoserver/" target="_blank">
+<img src="./assets/logos/logo-inpe.png" width="" height="150"/>
+</a>
+<a href="./pages/dados/br/inde_geoserver/" target="_blank">
+<img src="./assets/logos/logo-inde.png" width="150" height=""/>
+</a>
+</div>
+
+<div align="center">
+<a href="./pages/dados/br/iphan_geoserver/" target="_blank">
+<img src="./assets/logos/logo-iphan.png" width="" height="150"/>
+</a>
+<a href="./pages/dados/br/map_biomas/" target="_blank">
+<img src="./assets/logos/logo-mapbiomas.jpg" width="" height="150"/>
+</a>
+<a href="./pages/dados/br/mdr_geoserver/" target="_blank">
+<img src="./assets/logos/logo-midr.jpg" width="" height="150"/>
+</a>
+<a href="./pages/dados/br/sfb/" target="_blank">
+<img src="./assets/logos/logo-sfb.png" width="150" height=""/>
+</a>
+<a href="./pages/dados/br/snisb/" target="_blank">
+<img src="./assets/logos/logo-snib.jpg" width="150" height=""/>
+</a>
+</div>
+
+<br>
+
+---
+
+## Dependências
+
+O projeto tem como dependêcias pacotes para obtenção de diferentes tipos de dados, bem como define funções e classes para obtenção de dados específicos.
 
 As principais dependências utilizadas pelo **_Open Geodata_** para obter dados espaciais são:
 
