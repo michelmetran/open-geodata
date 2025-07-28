@@ -159,17 +159,22 @@ poetry add open-geodata
 
 ## Diagrama
 
-```mermaid
-flowchart LR
-    A .-> B
-    B  .-> C
-    A --Não Armazena --> C
+<body>
+    <div style="text-align:center;">
+        ```mermaid
+        flowchart LR
+            A .-> B
+            B  .-> C
+            A --Não Armazena --> C
 
-    B@{ shape: cyl}
-    A(["Obter"])
-    B["Armazenar"]
-    C["Usar"]
-```
+            B@{ shape: cyl}
+            A(["Obter"])
+            B["Armazenar"]
+            C["Usar"]
+        ```
+    </div>
+
+</body>
 
 <br>
 
