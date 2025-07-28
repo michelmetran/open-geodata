@@ -16,9 +16,8 @@ site_dir: "site" # Default site
 # Opcional
 nav:
   - Home: index.md
-  - GeoServer: geoserver.md
-  - Outros: outros.md
-  - Funções: pages/funções.md
+  - GeoServer: pages/geoserver.md
+  - Outros: pages/outros.md
   - Ambiente de Desenvolvimento: pages/ambiente_desenvolvimento.md
 
   - Dados (Brasil):
@@ -26,7 +25,7 @@ nav:
       - BR.ANM (Class): pages/dados/br/amn_class.ipynb
       - BR.ANM (Pooch): pages/dados/br/amn_pooch.ipynb
       - BR.ANEEL (ArcGIS): pages/dados/br/aneel_arcgis.ipynb
-      - BR.ANP: pages/dados/br/anp_geoserver.ipynb
+      - BR.ANP (GeoServer): pages/dados/br/anp_geoserver.ipynb
       - BR.BDGEx: pages/dados/br/bdgex.md
       - BR.CNUC (Pooch): pages/dados/br/cnuc_pooch.ipynb
       - BR.DNIT (GeoServer): pages/dados/br/dnit_geoserver.ipynb
@@ -54,7 +53,7 @@ nav:
       - SP.DataGeo (GeoServer): pages/dados/sp/datageo_geoserver.ipynb
       - SP.Defesa Civil: pages/dados/sp/defesa_civil_divamin.ipynb
       - SP.MPSP: pages/dados/sp/mpsp_pooch.ipynb
-      - SP.SP: pages/dados/sp/sp.ipynb
+      - SP.SP: pages/dados/sp/sp_pooch.ipynb
       - SP.TJSP: pages/dados/sp/tjsp.ipynb
 
   - Dados (Paraná):
