@@ -8,56 +8,89 @@
 O **_Open Geodata_** tem como objetivo facilitar o acesso à dados espaciais de instituições públicas e privadas do Brasil. Algumas das instituições são apresentadas abaixo:
 
 <div align="center"> 
-<a href="./pages/dados/br/amn/" target="_blank">
+<a href="./pages/dados/br/amn/">
 <img src="./assets/logos/logo-amn.png" width="150" height="150"/>
 </a>
-<a href="./pages/dados/br/aneel/" target="_blank">
+<a href="./pages/dados/br/aneel/">
 <img src="./assets/logos/logo-aneel.png" width="150" height="150"/>
 </a>
-<a href="./pages/dados/br/bdgex/" target="_blank">
+<a href="./pages/dados/br/anp_geoserver/">
+<img src="./assets/logos/logo-anp.png" width="150" height="150"/>
+</a>
+<a href="./pages/dados/br/bdgex/">
 <img src="./assets/logos/logo-exercito.png" width="150" height="150"/>
 </a>
-<a href="./pages/dados/br/cnuc_pooch/" target="_blank">
+</div>
+
+<div align="center">
+<a href="./pages/dados/br/cnuc_pooch/">
 <img src="./assets/logos/logo-mma.jpg" width="150" height="150"/>
 </a>
-<a href="./pages/dados/br/dnit_geoserver/" target="_blank">
+<a href="./pages/dados/br/dnit_geoserver/">
 <img src="./assets/logos/logo-dnit.png" width="150" height="150"/>
 </a>
-</div>
-
-<div align="center">
-<a href="./pages/dados/br/funai_geoserver/" target="_blank">
-<img src="./assets/logos/logo-funai.png" width="" height="150"/>
+<a href="./pages/dados/br/funai_geoserver/">
+<img src="./assets/logos/logo-funai.png" width="150" height="150"/>
 </a>
-<a href="./pages/dados/br/ibama_geoserver/" target="_blank">
-<img src="./assets/logos/logo-ibama.png" width="" height="150"/>
-</a>
-<a href="./pages/dados/br/ibge_class/" target="_blank">
-<img src="./assets/logos/logo-ibge.png" width="" height="150"/>
-</a>
-<a href="./pages/dados/br/inpe_geoserver/" target="_blank">
-<img src="./assets/logos/logo-inpe.png" width="" height="150"/>
-</a>
-<a href="./pages/dados/br/inde_geoserver/" target="_blank">
-<img src="./assets/logos/logo-inde.png" width="150" height=""/>
+<a href="./pages/dados/br/ibama_geoserver/">
+<img src="./assets/logos/logo-ibama.png" width="150" height="150"/>
 </a>
 </div>
 
 <div align="center">
-<a href="./pages/dados/br/iphan_geoserver/" target="_blank">
-<img src="./assets/logos/logo-iphan.png" width="" height="150"/>
+<a href="./pages/dados/br/ibge_class/">
+<img src="./assets/logos/logo-ibge.png" width="150" height="150"/>
 </a>
-<a href="./pages/dados/br/map_biomas/" target="_blank">
-<img src="./assets/logos/logo-mapbiomas.jpg" width="" height="150"/>
+<a href="./pages/dados/br/icmbio_pooch/">
+<img src="./assets/logos/logo-icmbio.png" width="150" height="150"/>
 </a>
-<a href="./pages/dados/br/mdr_geoserver/" target="_blank">
-<img src="./assets/logos/logo-midr.jpg" width="" height="150"/>
+<a href="./pages/dados/br/inpe_geoserver/">
+<img src="./assets/logos/logo-inpe.png" width="150" height="150"/>
 </a>
-<a href="./pages/dados/br/sfb/" target="_blank">
-<img src="./assets/logos/logo-sfb.png" width="150" height=""/>
+<a href="./pages/dados/br/inde_geoserver/">
+<img src="./assets/logos/logo-inde.png" width="150" height="150"/>
 </a>
-<a href="./pages/dados/br/snisb/" target="_blank">
-<img src="./assets/logos/logo-snib.jpg" width="150" height=""/>
+</div>
+
+<div align="center">
+<a href="./pages/dados/br/iphan_geoserver/">
+<img src="./assets/logos/logo-iphan.png" width="150" height="150"/>
+</a>
+<a href="./pages/dados/br/map_biomas/">
+<img src="./assets/logos/logo-mapbiomas.png" width="150" height="150"/>
+</a>
+<a href="./pages/dados/br/midr_geoserver/" >
+<img src="./assets/logos/logo-midr.jpg" width="150" height="150"/>
+</a>
+<a href="./pages/dados/br/sfb/" >
+<img src="./assets/logos/logo-sfb.png" width="150" height="150"/>
+</a>
+</div>
+
+<div align="center">
+<a href="./pages/dados/br/snisb/" >
+<img src="./assets/logos/logo-snisb.png" width="150" height="150"/>
+</a>
+</div>
+
+<div align="center">
+<a href="./pages/dados/sp/cati/" >
+<img src="./assets/logos/logo-cati.png" width="150" height="150"/>
+</a>
+<a href="./pages/dados/sp/cetesb/" >
+<img src="./assets/logos/logo-cetesb.png" width="150" height="150"/>
+</a>
+<a href="./pages/dados/sp/daee_geoserver/" >
+<img src="./assets/logos/logo-daee.png" width="150" height="150"/>
+</a>
+<a href="./pages/dados/sp/defesa_civil_divamin/" >
+<img src="./assets/logos/logo-defesa-civil.png" width="150" height="150"/>
+</a>
+<a href="./pages/dados/sp/mpsp/" >
+<img src="./assets/logos/logo-mpsp.png" width="150" height="150"/>
+</a>
+<a href="./pages/dados/sp/tjsp/" >
+<img src="./assets/logos/logo-tjsp.png" width="150" height="150"/>
 </a>
 </div>
 

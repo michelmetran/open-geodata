@@ -27,6 +27,7 @@ nav:
       - BR.ANM (Pooch): pages/dados/br/amn_pooch.ipynb
       - BR.ANEEL: pages/dados/br/aneel.md
       - BR.ANEEL (ArcGIS): pages/dados/br/aneel_arcgis.ipynb
+      - BR.ANP: pages/dados/br/anp_geoserver.ipynb
       - BR.BDGEx: pages/dados/br/bdgex.md
       - BR.CNUC (Pooch): pages/dados/br/cnuc_pooch.ipynb
       - BR.DNIT (GeoServer): pages/dados/br/dnit_geoserver.ipynb
@@ -40,7 +41,7 @@ nav:
       - BR.INDE (GeoServer): pages/dados/br/inde_geoserver.ipynb
       - BR.IPHAN (GeoServer): pages/dados/br/iphan_geoserver.ipynb
       - BR.MapBiomas: pages/dados/br/map_biomas.ipynb
-      - BR.MDR (GeoServer): pages/dados/br/mdr_geoserver.ipynb
+      - BR.MIDR (GeoServer): pages/dados/br/midr_geoserver.ipynb
       - BR.SFB (Exemplos): pages/dados/br/sfb.ipynb
       - BR.SFB (GeoServer): pages/dados/br/sfb_geoserver.ipynb
       - BR.SNISB: pages/dados/br/snisb.md
@@ -73,7 +74,7 @@ nav:
       - Outros Dados: pages/dados/outros_dados.md
 
   - Rasters:
-      - Google Earth: google.ipynb
+      - Google Earth: pages/dados/raster/google.ipynb
 
   #     - Gerenciamento de Perfil: scripts/gerenciamento_perfil.ipynb
   #     - Consulta de Processos: scripts/consulta_processo.ipynb
