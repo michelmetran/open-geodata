@@ -43,6 +43,7 @@ Discussions = "https://github.com/michelmetran/open-geodata/discussions"
 dev = ["notebook>=7.4.3", "python-dotenv>=1.1.0"]
 docs = [
     "mkdocs>=1.6.1",
+    # https://pypi.org/project/mkdocs-jupyter/
     "mkdocs-jupyter>=0.25.1",
     "mkdocs-material[imaging]>=9.6.14",
     # https://pypi.org/project/mkdocs-pdf/
