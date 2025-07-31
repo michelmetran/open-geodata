@@ -264,7 +264,7 @@ def load_dataset(db, name, *args, **kwargs) -> pd.DataFrame | gpd.GeoDataFrame:
                         driver='ESRI Shapefile',
                     )
                 else:
-                    print('Definir o que fazer')
+                    raise Exception('Definir o que fazer')
 
     else:
         raise Exception(f'Extensão {ext} não configurada.')

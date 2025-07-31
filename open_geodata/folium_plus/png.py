@@ -55,17 +55,17 @@ if __name__ == '__main__':
 
     import io
 
-    from paths import docs_path_imgs, scrapy_path_driver, scrapy_path_logs
-    from PIL import Image
+    # from paths import docs_path_imgs, scrapy_path_driver, scrapy_path_logs
+    # from PIL import Image
 
-    # Cria mapa como objeto
-    m = MyMap(location=[-23.9619271, -46.3427499], zoom_start=12)
+    # # Cria mapa como objeto
+    # m = MyMap(location=[-23.9619271, -46.3427499], zoom_start=12)
 
-    # Salva
-    img_data = m.to_png_custom(
-        gecko_path=scrapy_path_driver / 'geckodriver.exe',
-        log_path=scrapy_path_logs / 'geckodriver.log',
-        delay=7,
-    )
-    img = Image.open(io.BytesIO(img_data))
-    img.save(docs_path_imgs / 'cetesb_enquadramento.png')
+    # # Salva
+    # img_data = m.to_png_custom(
+    #     gecko_path=scrapy_path_driver / 'geckodriver.exe',
+    #     log_path=scrapy_path_logs / 'geckodriver.log',
+    #     delay=7,
+    # )
+    # img = Image.open(io.BytesIO(img_data))
+    # img.save(docs_path_imgs / 'cetesb_enquadramento.png')

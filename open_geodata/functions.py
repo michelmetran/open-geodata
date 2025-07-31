@@ -23,6 +23,7 @@ def find_neighbors(gdf, column_name):
 def share_boundary(gdf, gdf_interest):
     """
     Adaptação de https://stackoverflow.com/questions/66153429/selecting-polygons-which-shares-a-boundary-with-target-polygon-in-python-prefera
+    
     :param gdf:
     :param gdf_interest:
     :return:

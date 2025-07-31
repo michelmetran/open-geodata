@@ -1,6 +1,6 @@
 [project]
 name = "open-geodata"
-version = "23.0.16"
+version = "23.0.18"
 description = "Dados Espaciais do Brasil"
 authors = [{ name = "michelmetran", email = "michelmetran@gmail.com" }]
 keywords = ["geodata", "geoprocessamento", "github", "utility"]
@@ -9,25 +9,48 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     #"arcgis==2.4.1.1",
+    # https://pypi.org/project/bmi-arcgis-restapi/
     "bmi-arcgis-restapi>=2.4.13",
+    # https://pypi.org/project/cbers4asat/
+    "cbers4asat[tools]>=0.9.2",
+    # https://pypi.org/project/contextily/
+    "contextily>=1.6.2",
+    # https://pypi.org/project/earthengine-api/
     "earthengine-api>=1.5.19",
+    # https://pypi.org/project/fiona/
     "fiona>=1.10.1",
+    # https://pypi.org/project/folium/
     "folium>=0.19.7",
+    # https://pypi.org/project/GDAL/
+    "gdal>=3.11.1",
+    # https://pypi.org/project/geemap/
     "geemap>=0.35.3",
+    # https://pypi.org/project/geopandas/
     "geopandas>=1.1.0",
+    # https://pypi.org/project/mapclassify/
     "mapclassify>=2.9.0",
+    # https://pypi.org/project/matplotlib/
     "matplotlib>=3.10.3",
     "more-itertools>=10.7.0",
+    # https://pypi.org/project/openpyxl/
     "openpyxl>=3.1.5",
+    # https://pypi.org/project/OWSLib/
     "owslib>=0.34.1",
+    # https://pypi.org/project/pandas/
     "pandas>=2.3.0",
+    # https://pypi.org/project/pooch/
     "pooch>=1.8.2",
+    # https://pypi.org/project/py7zr/
     "py7zr>=1.0.0",
+    # https://pypi.org/project/rarfile/
     "rarfile>=4.2",
+    # https://pypi.org/project/requests-ip-rotator/
     "requests-ip-rotator>=1.0.14",
+    # https://pypi.org/project/selenium/
     "selenium>=4.33.0",
     # pip install git+https://github.com/urbanogilson/SICAR
     "sicar",
+    # https://pypi.org/project/sidrapy/
     "sidrapy>=0.1.4",
 ]
 
@@ -53,6 +76,10 @@ docs = [
 
 [tool.uv.sources]
 sicar = { git = "https://github.com/urbanogilson/SICAR" }
+gdal = [
+    { index = "gdal-wheels", marker = "sys_platform == 'linux'" },
+    { index = "geospatial_wheels", marker = "sys_platform == 'win32'" },
+]
 
 
 [tool.uv]
@@ -68,3 +95,15 @@ module-root = ""
 
 [tool.uv.build-backend.data]
 data = "open_geodata/db"
+
+
+# https://github.com/astral-sh/uv/issues/11466#issuecomment-2689434221
+[[tool.uv.index]]
+name = "geospatial_wheels"
+url = "https://nathanjmcdougall.github.io/geospatial-wheels-index/"
+explicit = true
+
+[[tool.uv.index]]
+name = "gdal-wheels"
+url = "https://gitlab.com/api/v4/projects/61637378/packages/pypi/simple"
+explicit = true

@@ -27,21 +27,17 @@ def get_estimated_population(id_municipio):
         'D1C': 'id_municipio',
         'D1N': 'municipio_nome',
         'V': 'n_habitantes',
-        'D2N': 'ano'
+        'D2N': 'ano',
     }
 
     # Rename Columns
-    df.rename(
-        dict_col,
-        axis=1,
-        inplace=True
-    )
+    df = df.rename(dict_col, axis=1, inplace=False)
 
     # Select Columns
     df = df[[v for k, v in dict_col.items()]]
 
     # Adjust Columns
-    df.sort_values(by=['ano'], inplace=True)
+    df = df.sort_values(by=['ano'], inplace=False)
     df['id_municipio'] = pd.to_numeric(df['id_municipio'], errors='coerce')
     df['n_habitantes'] = pd.to_numeric(df['n_habitantes'], errors='coerce')
     df['ano'] = pd.to_numeric(df['ano'], errors='coerce')

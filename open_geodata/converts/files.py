@@ -109,11 +109,11 @@ def convert_to_7zip(input_path, output_path, extension='gpkg'):
     return 0
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
 
-    # Convert
-    data_path = Path(__file__).parents[1].joinpath('data')
-    ibge_path = data_path / 'geo' / 'br_ibge'
-    convert_to_7zip(ibge_path, ibge_path)
+#     # Convert
+#     data_path = Path(__file__).parents[1].joinpath('data')
+#     ibge_path = data_path / 'geo' / 'br_ibge'
+#     convert_to_7zip(ibge_path, ibge_path)
 
-    pass
+#     pass

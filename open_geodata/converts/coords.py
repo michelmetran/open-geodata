@@ -47,8 +47,9 @@ def dms2dd(coord):
     graus = float(coord.split('°')[0])
     minutos = float((coord.split('°')[1]).split('’')[0])
     segundos = float(
-        (((coord.split('°')[1]).split('’')[1]).split('”')[0]).replace(',', '.'))
-    direction = (((coord.split('°')[1]).split('’')[1]).split('”')[1])
+        (((coord.split('°')[1]).split('’')[1]).split('”')[0]).replace(',', '.')
+    )
+    direction = ((coord.split('°')[1]).split('’')[1]).split('”')[1]
 
     # Calcular
     coord_dm = graus + (minutos / 60) + (segundos / 3600)
@@ -80,7 +81,7 @@ def dms2dd_infoaguas(coord_dms):
     return coord_dd
 
 
-if __name__ == '__main__':
-    print(dms2dd('23°06’12,48”S'))
-    print(dms2dd_infoaguas('22 13 52'))
-    print(dms2dd_daee("22° 55' 09''"))
+# if __name__ == '__main__':
+#     print(dms2dd('23°06’12,48”S'))
+#     print(dms2dd_infoaguas('22 13 52'))
+#     print(dms2dd_daee("22° 55' 09''"))

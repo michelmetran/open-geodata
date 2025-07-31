@@ -40,7 +40,7 @@ nav:
       - BR.IPHAN (GeoServer): pages/dados/br/iphan_geoserver.ipynb
       - BR.MapBiomas: pages/dados/br/map_biomas.ipynb
       - BR.MIDR (GeoServer): pages/dados/br/midr_geoserver.ipynb
-      - BR.SFB (Exemplos): pages/dados/br/sfb.ipynb
+      - BR.SFB (SICAR): pages/dados/br/sfb_sicar.ipynb
       - BR.SFB (GeoServer): pages/dados/br/sfb_geoserver.ipynb
       - BR.SNISB: pages/dados/br/snisb.md
 
@@ -72,7 +72,8 @@ nav:
       - Outros Dados: pages/dados/outros_dados.md
 
   - Rasters:
-      - Google Earth: pages/dados/raster/google.ipynb
+      - Tiles: pages/dados/raster/tiles.ipynb
+      - CBERS: pages/dados/raster/cbers.ipynb
 
   #     - Gerenciamento de Perfil: scripts/gerenciamento_perfil.ipynb
   #     - Consulta de Processos: scripts/consulta_processo.ipynb

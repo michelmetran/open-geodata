@@ -14,7 +14,7 @@ def create_colors(input_geojson, col_categories):
     :param col_categories:
     :return:
     """
-    gdf = gpd.read_file(input_geojson)
+    gdf = gpd.read_file(filename=input_geojson)
 
     list_cols = list(set(gdf.columns))
     if col_categories not in list_cols:
@@ -29,7 +29,7 @@ def create_colors(input_geojson, col_categories):
     categories.sort()
 
     # See the palette chosed
-    pal = sns.color_palette(palette_polygon, n_colors=len(categories))
+    pal = sns.color_palette(palette=palette_polygon, n_colors=len(categories))
 
     # Set dictionary
     color_polygon = dict(zip(categories, pal.as_hex()))

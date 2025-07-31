@@ -7,7 +7,7 @@ _summary_
 
 import urllib.parse
 from pathlib import Path
-
+import geopandas as gpd
 import numpy as np
 import pandas as pd
 import requests
@@ -226,6 +226,12 @@ class CETESB:
         return df_ag_mun
 
     def get_only_agencias(self) -> pd.DataFrame:
+        """
+        Obtem apenas as Agências da CETESB
+
+        :return: _description_
+        :rtype: pd.DataFrame
+        """
         df_ag_mun = self._get_ag_mun()
 
         # Get column's name
@@ -241,7 +247,13 @@ class CETESB:
         df = df.drop(df.columns[len(df.columns) - 1], axis=1, inplace=False)
         return df
 
-    def get_geodataframe(self):
+    def get_geodataframe(self) -> gpd.GeoDataFrame:
+        """
+        Cria um geodataframe contendo a divisão administrativa das agências da CETESB
+
+        :return: _description_
+        :rtype: _type_
+        """
 
         # Padrão
         gdf = geo.load_dataset(db='sp', name='geo.sp_250k_wgs84')
