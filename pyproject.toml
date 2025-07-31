@@ -22,7 +22,7 @@ dependencies = [
     # https://pypi.org/project/folium/
     "folium>=0.19.7",
     # https://pypi.org/project/GDAL/
-    "gdal>=3.11.1",
+    # "gdal>=3.11.1",
     # https://pypi.org/project/geemap/
     "geemap>=0.35.3",
     # https://pypi.org/project/geopandas/
@@ -82,6 +82,18 @@ gdal = [
 ]
 
 
+# https://github.com/astral-sh/uv/issues/11466#issuecomment-2689434221
+[[tool.uv.index]]
+name = "geospatial_wheels"
+url = "https://nathanjmcdougall.github.io/geospatial-wheels-index/"
+explicit = true
+
+[[tool.uv.index]]
+name = "gdal-wheels"
+url = "https://gitlab.com/api/v4/projects/61637378/packages/pypi/simple"
+explicit = true
+
+
 [tool.uv]
 package = true
 
@@ -97,13 +109,3 @@ module-root = ""
 data = "open_geodata/db"
 
 
-# https://github.com/astral-sh/uv/issues/11466#issuecomment-2689434221
-[[tool.uv.index]]
-name = "geospatial_wheels"
-url = "https://nathanjmcdougall.github.io/geospatial-wheels-index/"
-explicit = true
-
-[[tool.uv.index]]
-name = "gdal-wheels"
-url = "https://gitlab.com/api/v4/projects/61637378/packages/pypi/simple"
-explicit = true
