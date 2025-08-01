@@ -4,6 +4,11 @@
 # Required
 version: 2
 
+# Optionally build your docs in additional formats such as PDF and ePub
+formats:
+    - pdf
+    - epub
+
 # Set the OS, Python version, and other tools you might need
 build:
     os: ubuntu-24.04
@@ -14,21 +19,23 @@ build:
         - libssl-dev
         - libcurl4-openssl-dev
         - python3-dev
+        - python3-pip
+        - swig
+        #- python-gdal
         - gdal-bin
         - python3-gdal
-        #- python-gdal
-        - libgdal-dev 
-        - g++        
+        - libgdal-dev
+        - g++
 
     # https://browniebroke.com/blog/2022-11-21-specify-docs-dependency-groups-with-poetry-and-read-the-docs/
     # https://docs.readthedocs.com/platform/stable/config-file/v2.html#build-jobs
     jobs:
-        # pre_create_environment:
-        #     - echo "Command run at 'pre_create_environment' step"
+        pre_create_environment:
+            - echo "Command run at 'pre_create_environment' step"
 
-        # post_build:
-        #     - echo "Command run at 'post_build' step"
-        #     - echo `date`
+        post_build:
+            - echo "Command run at 'post_build' step"
+            - echo `date`
 
         post_create_environment:
             # Install Poetry
@@ -51,10 +58,23 @@ build:
             - pip install uv
             - UV_PROJECT_ENVIRONMENT=$READTHEDOCS_VIRTUALENV_PATH uv sync --all-extras --group docs --link-mode=copy
 
+        build:
+            html:
+                - echo "Building HTML"
+                - mkdir -p $READTHEDOCS_OUTPUT/html/
+                - echo "Hello world!" > $READTHEDOCS_OUTPUT/html/index.html
+            pdf:
+                - echo "Building PDF"
+                - mkdir -p $READTHEDOCS_OUTPUT/pdf/
+                - echo "Hello world!" > $READTHEDOCS_OUTPUT/pdf/index.pdf
+            epub:
+                - echo "Building ePub"
+                - mkdir -p $READTHEDOCS_OUTPUT/epub/
+                - echo "Hello world!" > $READTHEDOCS_OUTPUT/epub/index.epub
+
 # Build documentation with Mkdocs
 mkdocs:
     configuration: mkdocs.yml
-
 # Optionally, but recommended,
 # declare the Python requirements required to build your documentation
 # See https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html
@@ -62,7 +82,3 @@ mkdocs:
 #    install:
 #    - requirements: docs/requirements.txt
 
-# Optionally build your docs in additional formats such as PDF and ePub
-formats:
-    - pdf
-    - epub
