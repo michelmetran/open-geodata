@@ -23,7 +23,8 @@ dependencies = [
     # https://pypi.org/project/folium/
     "folium>=0.19.7",
     # https://pypi.org/project/GDAL/
-    "gdal>=3.11.1",
+    # "gdal>=3.11.1",
+    "gdal>=3.8.4",
     # https://pypi.org/project/geemap/
     "geemap>=0.35.3",
     # https://pypi.org/project/geopandas/
