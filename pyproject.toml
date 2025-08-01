@@ -8,6 +8,7 @@ license = "MIT"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    # https://pypi.org/project/arcgis/
     #"arcgis==2.4.1.1",
     # https://pypi.org/project/bmi-arcgis-restapi/
     "bmi-arcgis-restapi>=2.4.13",
@@ -22,7 +23,7 @@ dependencies = [
     # https://pypi.org/project/folium/
     "folium>=0.19.7",
     # https://pypi.org/project/GDAL/
-    # "gdal>=3.11.1",
+    "gdal>=3.11.1",
     # https://pypi.org/project/geemap/
     "geemap>=0.35.3",
     # https://pypi.org/project/geopandas/
@@ -81,7 +82,6 @@ gdal = [
     { index = "geospatial_wheels", marker = "sys_platform == 'win32'" },
 ]
 
-
 # https://github.com/astral-sh/uv/issues/11466#issuecomment-2689434221
 [[tool.uv.index]]
 name = "geospatial_wheels"
@@ -93,7 +93,6 @@ name = "gdal-wheels"
 url = "https://gitlab.com/api/v4/projects/61637378/packages/pypi/simple"
 explicit = true
 
-
 [tool.uv]
 package = true
 
@@ -101,11 +100,8 @@ package = true
 requires = ["uv_build"]
 build-backend = "uv_build"
 
-
 [tool.uv.build-backend]
 module-root = ""
 
 [tool.uv.build-backend.data]
 data = "open_geodata/db"
-
-
