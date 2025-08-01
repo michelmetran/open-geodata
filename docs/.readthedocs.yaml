@@ -16,7 +16,7 @@ build:
         - python3-dev
         - gdal-bin
         - python3-gdal
-        - python-gdal 
+        #- python-gdal
         - libgdal-dev 
         - g++        
 
