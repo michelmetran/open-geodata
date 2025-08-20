@@ -5,6 +5,10 @@ on: push
 # env:
 #   LANG: 'pt_BR.UTF-8'
 
+env:
+  CPLUS_INCLUDE_PATH: /usr/include/gdal
+  C_INCLUDE_PATH: /usr/include/gdal
+
 jobs:
   build-n-publish:
     name: Build and Publish Python Poetry🐍 distributions 📦 to PyPI
@@ -42,7 +46,7 @@ jobs:
       # Versão do GDAL
       - name: Versão do GDAL
         run: |
-          python3 -c "from osgeo import gdal; print(gdal.version)"
+          # python3 -c "from osgeo import gdal; print(gdal.version)"
           gdal-config --version
           ogrinfo --version
 
