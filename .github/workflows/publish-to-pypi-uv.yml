@@ -38,6 +38,8 @@ jobs:
       - name: Install GDAL system dependencies
         run: |
           sudo apt-get update
+          sudo add-apt-repository ppa:ubuntugis/ubuntugis-experimental
+          sudo apt-get update
           sudo apt-get install -y gdal-bin libgdal-dev python3-gdal g++
 
       # https://github.com/astral-sh/setup-uv
