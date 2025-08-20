@@ -11,7 +11,7 @@ O [GeoServer](https://geoserver.org/) é uma aplicação _open source_ para comp
 
 O [_GeoServer_](https://geoserver.org/) é uma maneira de disponibilizar dados geográficos. Existem dezenas de _GeoServers_ de instituições públicas disponibilizando dados na internet. Usualmente, quando encontramos um GeoServer na internet, nos deparamos com essa interface abaixo.
 
-![Geoserver](./assets/geoserver.png)
+![Geoserver](./../assets/geoserver.png)
 
 <br>
 
@@ -38,6 +38,8 @@ Abaixo listo alguns apenas para exemplificar:
 - [https://servicos.dnit.gov.br/dnitgeo/geoserver/web/](https://servicos.dnit.gov.br/dnitgeo/geoserver/web/)
 - [https://geoserver.mdr.gov.br/geoserver/web/](https://geoserver.mdr.gov.br/geoserver/web/)
 - [https://geoinfo.dados.embrapa.br/geoserver/web/](https://geoinfo.dados.embrapa.br/geoserver/web/)
+- [https://sistemas.anatel.gov.br/geoserver/web/](https://sistemas.anatel.gov.br/geoserver/web/)
+- [https://geoserver.car.gov.br/geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage](https://geoserver.car.gov.br/geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage)
 
 <br>
 

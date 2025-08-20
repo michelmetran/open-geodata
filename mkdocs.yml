@@ -17,6 +17,7 @@ site_dir: "site" # Default site
 nav:
   - Home: index.md
   - GeoServer: pages/geoserver.md
+  - GeoServer: pages/arcgis.md
   - Outros: pages/outros.md
   - Ambiente de Desenvolvimento: pages/ambiente_desenvolvimento.md
 

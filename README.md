@@ -5,9 +5,7 @@
 [![Read the Docs](https://img.shields.io/readthedocs/open-geodata?logo=ReadTheDocs&label=Read%20The%20Docs)](https://open-geodata.readthedocs.io/pt/latest/)
 [![Publish Python to PyPI](https://github.com/michelmetran/open-geodata/actions/workflows/publish-to-pypi-uv.yml/badge.svg)](https://github.com/michelmetran/open-geodata/actions/workflows/publish-to-pypi-uv.yml)
 
-O **_OpenGeodata_** tem como objetivo disponibilizar dados espaciais para pequenos projetos. A concepção é que ter os
-dados localmente pode ser mais interessante (e barato!) que manter dados em servidores.\
-Alguns dos dados básicos disponíveis no pacote são:
+O **_OpenGeodata_** tem como objetivo disponibilizar dados espaciais para pequenos projetos. A concepção é que ter os dados localmente pode ser mais interessante (e barato!) que manter dados em servidores. Alguns dos dados básicos disponíveis no pacote são:
 
 - **geo.br_ibge.br_ibge**: Limites dos Estados
 - **geo.sp.sp_050k_wgs84**: Limites administrativos municipais do Estado de São Paulo em escala 1:50.000.
