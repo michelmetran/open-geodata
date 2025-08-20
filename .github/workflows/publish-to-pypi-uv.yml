@@ -30,10 +30,6 @@ jobs:
       #   run: |
       #     export LC_ALL=C
 
-      # https://github.com/actions/checkout
-      - name: Check out repository
-        uses: actions/checkout@v4
-
       # Instala GDAL e dependências do sistema
       - name: Install GDAL system dependencies
         run: |
@@ -42,6 +38,17 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y gdal-bin libgdal-dev python3-gdal g++
           pip install GDAL==3.11.3
+
+      # Versão do GDAL
+      - name: Versão do GDAL
+        run: |
+          python3 -c "from osgeo import gdal; print(gdal.version)"
+          gdal-config --version
+          ogrinfo --version
+
+      # https://github.com/actions/checkout
+      - name: Check out repository
+        uses: actions/checkout@v4
 
       # https://github.com/astral-sh/setup-uv
       - name: Install uv
@@ -59,6 +66,12 @@ jobs:
 
       - name: Install the project
         run: uv sync --locked --all-extras --dev
+
+      - name: Build
+        run: uv build
+
+      - name: Publish
+        run: uv publish -t ${{ secrets.PYPI_TOKEN }}
 
       # For example, using `pytest`
       # - name: Run tests
@@ -86,9 +99,3 @@ jobs:
 
       # - name: Publish package
       #   run: poetry publish --build
-
-      - name: Build
-        run: uv build
-
-      - name: Publish
-        run: uv publish -t ${{ secrets.PYPI_TOKEN }}
