@@ -9,50 +9,56 @@ jobs:
 
     # Checkout
     steps:
-    - uses: actions/checkout@master
+      - uses: actions/checkout@master
 
-    # Install Python
-    # https://github.com/actions/setup-python
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: 3.11
+      # Instala GDAL e dependências do sistema
+      - name: Install GDAL system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gdal-bin libgdal-dev python3-gdal g++
 
-    # Install pip and packages
-    - name: Install pypa/build and incremental
-      run: |
-        python -m pip install --upgrade pip
-        python -m pip install build --user
-        python -m pip install incremental[scripts] --user
+      # Install Python
+      # https://github.com/actions/setup-python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
 
-    # Update Version!
-    - name: Update package version
-      run: >-
-        python -m incremental.update open_geodata --patch
+      # Install pip and packages
+      - name: Install pypa/build and incremental
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install build --user
+          python -m pip install incremental[scripts] --user
 
-    # Create binary wheel
-    - name: Build a binary wheel and a source tarball
-      run: >-
-        python -m build --sdist --wheel --outdir dist/ .
+      # Update Version!
+      - name: Update package version
+        run: >-
+          python -m incremental.update open_geodata --patch
 
-    # Git Add and Commit
-    - name: commit files
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add -A
-        git commit -m "Update Version using GitAction" -a
+      # Create binary wheel
+      - name: Build a binary wheel and a source tarball
+        run: >-
+          python -m build --sdist --wheel --outdir dist/ .
 
-    # Git Push
-    - name: push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.API_TOKEN_GITHUB }} # Definido na Organização
-        branch: ${{ github.ref }}
+      # Git Add and Commit
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "Update Version using GitAction" -a
 
-    # Publish Distribution
-    - name: Publish distribution 📦 to PyPI
-      uses: pypa/gh-action-pypi-publish@release/v1
-      with:
-        password: ${{ secrets.PYPI_API_TOKEN }}
-        print_hash: true
+      # Git Push
+      - name: push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.API_TOKEN_GITHUB }} # Definido na Organização
+          branch: ${{ github.ref }}
+
+      # Publish Distribution
+      - name: Publish distribution 📦 to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          password: ${{ secrets.PYPI_API_TOKEN }}
+          print_hash: true
