@@ -28,7 +28,7 @@ class IBGE:
         """
         # Obtem dados do IBGE
         gdf = gpd.read_file(
-            filename=f'http://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2018/UFs/{estado}/{estado.lower()}_municipios.zip'
+            filename=f'https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2018/UFs/{estado}/{estado.lower()}_municipios.zip'
         )
 
         # Renomeia Colunas
@@ -55,7 +55,7 @@ class IBGE:
         :param estado: Sigla do estado (ex: 'SP' para São Paulo)
         :param output_path: Caminho onde os arquivos serão salvos
         """
-        url = f'http://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2018/UFs/{estado}/{estado.lower()}_municipios.zip'
+        url = f'https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2018/UFs/{estado}/{estado.lower()}_municipios.zip'
         filename = Path(url).name
         # Download
         r = requests.get(url, allow_redirects=True)
