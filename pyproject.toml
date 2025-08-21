@@ -1,6 +1,6 @@
 [project]
 name = "open-geodata"
-version = "23.1.5"
+version = "23.1.6"
 description = "Dados Espaciais do Brasil"
 authors = [{ name = "michelmetran", email = "michelmetran@gmail.com" }]
 keywords = ["geodata", "geoprocessamento", "github", "utility"]
@@ -40,8 +40,6 @@ dependencies = [
     "requests-ip-rotator>=1.0.14",
     # https://pypi.org/project/selenium/
     "selenium>=4.33.0",
-    # pip install git+https://github.com/urbanogilson/SICAR
-    "sicar",
     # https://pypi.org/project/sidrapy/
     "sidrapy>=0.1.4",
 ]
@@ -67,6 +65,10 @@ raster = [
     # https://pypi.org/project/geemap/
     "geemap>=0.35.3",
 ]
+car = [
+    # pip install git+https://github.com/urbanogilson/SICAR
+    "sicar",
+]
 
 [dependency-groups]
 dev = [
@@ -89,7 +91,7 @@ docs = [
 ]
 
 [tool.uv.sources]
-sicar = { git = "https://github.com/urbanogilson/SICAR" }
+sicar = { git = "https://github.com/urbanogilson/SICAR", extra = "car" }
 gdal = [
     { index = "gdal-wheels", marker = "sys_platform == 'linux'", extra = "raster" },
     { index = "geospatial-wheels", marker = "sys_platform == 'win32'", extra = "raster" },

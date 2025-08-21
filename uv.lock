@@ -2297,7 +2297,7 @@ wheels = [
 
 [[package]]
 name = "open-geodata"
-version = "23.1.5"
+version = "23.1.6"
 source = { editable = "." }
 dependencies = [
     { name = "bmi-arcgis-restapi" },
@@ -2315,11 +2315,13 @@ dependencies = [
     { name = "rarfile" },
     { name = "requests-ip-rotator" },
     { name = "selenium" },
-    { name = "sicar" },
     { name = "sidrapy" },
 ]
 
 [package.optional-dependencies]
+car = [
+    { name = "sicar" },
+]
 raster = [
     { name = "cbers4asat", extra = ["tools"] },
     { name = "contextily" },
@@ -2367,10 +2369,10 @@ requires-dist = [
     { name = "rarfile", specifier = ">=4.2" },
     { name = "requests-ip-rotator", specifier = ">=1.0.14" },
     { name = "selenium", specifier = ">=4.33.0" },
-    { name = "sicar", git = "https://github.com/urbanogilson/SICAR" },
+    { name = "sicar", marker = "extra == 'car'", git = "https://github.com/urbanogilson/SICAR" },
     { name = "sidrapy", specifier = ">=0.1.4" },
 ]
-provides-extras = ["raster"]
+provides-extras = ["raster", "car"]
 
 [package.metadata.requires-dev]
 dev = [
