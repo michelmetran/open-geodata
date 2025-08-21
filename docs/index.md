@@ -142,6 +142,8 @@ Alguma dúvida, sugestão e/ou contribuição, favor reportar um [problema/_issu
 
 O pacote está disponível no repositório oficial do _python_: [PyPI](https://pypi.org/project/open-geodata/).
 
+Idealmente usar o uv, pois resolverá a dependÊncia do [SICAR](https://github.com/urbanogilson/SICAR).
+
 ```shell
 # Instala usando pip
 pip3 install open-geodata --upgrade
