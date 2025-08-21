@@ -2292,7 +2292,7 @@ wheels = [
 
 [[package]]
 name = "open-geodata"
-version = "23.0.16"
+version = "23.1.4"
 source = { editable = "." }
 dependencies = [
     { name = "bmi-arcgis-restapi" },
@@ -2352,7 +2352,7 @@ requires-dist = [
     { name = "more-itertools", specifier = ">=10.7.0" },
     { name = "openpyxl", specifier = ">=3.1.5" },
     { name = "owslib", specifier = ">=0.34.1" },
-    { name = "pandas", specifier = ">=2.3.0" },
+    { name = "pandas", specifier = ">=2.2.2" },
     { name = "pooch", specifier = ">=1.8.2" },
     { name = "py7zr", specifier = ">=1.0.0" },
     { name = "rarfile", specifier = ">=4.2" },
