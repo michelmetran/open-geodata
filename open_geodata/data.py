@@ -25,9 +25,21 @@ import rarfile
 
 class DB:
     def __init__(self, db='general', project='open_geodata') -> None:
+        """
+        _summary_
+
+        :param db: _description_, defaults to 'general'
+        :type db: str, optional
+        :param project: _description_, defaults to 'open_geodata'
+        :type project: str, optional
+        :raises Exception: _description_
+        :raises Exception: _description_
+        """
+        # Project
         self.project = project
         self.cache = None
 
+        # DBs
         db_path = Path(__file__).parent / 'db'
         list_dbs = list(db_path.rglob('*.json'))
         list_dbs = [x.stem for x in list_dbs]
@@ -37,13 +49,19 @@ class DB:
                 f'O db deve ser um dos listados abaixo\n{list_dbs_str}'
             )
 
+        # ddddd
         json_data = pkgutil.get_data(
-            package=self.project, resource=f'db/{db}.json'
+            package=self.project,
+            resource=f'db/{db}.json',
         )
+
+        #
         if isinstance(json_data, bytes):
             self.json_raw = json.loads(json_data)
         else:
             raise Exception('Erro!')
+
+        #
         self.json = self._flatten()
         # self._check_keys()
 
