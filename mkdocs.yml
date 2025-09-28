@@ -64,7 +64,7 @@ nav:
       - ES.Geobases (GeoServer): pages/dados/es/geobases_geoserver.ipynb
 
   - Outros:
-      - Atlas Rural de Piracicbaa: pages/dados/outros/sp_atlas_rural_piracicaba.ipynb
+      - Atlas Rural de Piracicaba: pages/dados/outros/sp_atlas_rural_piracicaba.ipynb
       - APA Corumbataí: pages/dados/outros/sp_ff_apa_corumbatai.ipynb
       - Santos, SP (GeoServer): pages/dados/outros/santos_geoserver.ipynb
       - Piracicaba: pages/dados/outros/sp_piracicaba.ipynb
