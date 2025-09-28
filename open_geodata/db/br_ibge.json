@@ -1,6 +1,6 @@
 {
   "geo": {
-    "br-malha_municipal-2024": {
+    "br-municipios-2024": {
       "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/Brasil/BR_Municipios_2024.zip",
       "hash": null,
       "description": "Municípios do Brasil. Dados de 2024.",
@@ -14,7 +14,7 @@
       "details": "https://geoftp.ibge.gov.br"
     },
 
-    "br-reg-intermediaria-2024": {
+    "br-reg-intermediária-2024": {
       "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/Brasil/BR_RG_Intermediarias_2024.zip",
       "hash": null,
       "description": "Regiões Intermediárias do Brasil. Dados de 2024.",
@@ -35,7 +35,14 @@
       "details": "https://geoftp.ibge.gov.br"
     },
 
-    "sp-malha_municipal-2024": {
+    "br-país-2024": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/Brasil/BR_Pais_2024.zip",
+      "hash": null,
+      "description": "Limite do país Brasil. Dados de 2024.",
+      "details": "https://geoftp.ibge.gov.br"
+    },
+
+    "sp-municipios-2024": {
       "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/UFs/SP/SP_Municipios_2024.zip",
       "hash": null,
       "description": "Municípios do Estado de São Paulo. Dados de 2024.",
@@ -49,10 +56,24 @@
       "details": "https://geoftp.ibge.gov.br"
     },
 
-    "sp-reg-intermediaria-2024": {
+    "sp-reg-intermediária-2024": {
       "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2024/UFs/SP/SP_RG_Intermediarias_2024.zip",
       "hash": null,
       "description": "Regiões Intermediárias do Estado de São Paulo. Dados de 2024.",
+      "details": "https://geoftp.ibge.gov.br"
+    },
+
+    "amazônia-legal-2024": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/amazonia_legal/2024/Limites_Amazonia_Legal_2024_shp.zip",
+      "hash": null,
+      "description": "Limite da Amazônia Legal. Dados de 2024.",
+      "details": "https://geoftp.ibge.gov.br"
+    },
+
+    "matopiba-2021": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/MATOPIBA/2021/MATOPIBA_2021.xls",
+      "hash": null,
+      "description": "Municípios que fazem parte do MATOPIBA. Dados de 2021.",
       "details": "https://geoftp.ibge.gov.br"
     }
   }
