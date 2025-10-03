@@ -91,7 +91,7 @@ docs = [
 ]
 
 [tool.uv.sources]
-sicar = { git = "https://github.com/urbanogilson/SICAR", extra = "car" }
+#sicar = { git = "https://github.com/urbanogilson/SICAR", extra = "car" }
 gdal = [
     { index = "gdal-wheels", marker = "sys_platform == 'linux'", extra = "raster" },
     { index = "geospatial-wheels", marker = "sys_platform == 'win32'", extra = "raster" },
