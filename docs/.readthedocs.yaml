@@ -59,19 +59,19 @@ build:
             - pip install uv
             - UV_PROJECT_ENVIRONMENT=$READTHEDOCS_VIRTUALENV_PATH uv sync --all-extras --group docs --link-mode=copy
 
-        build:
-            html:
-                - echo "Building HTML"
-                - mkdir -p $READTHEDOCS_OUTPUT/html/
-                - echo "Hello world!" > $READTHEDOCS_OUTPUT/html/index.html
-            pdf:
-                - echo "Building PDF"
-                - mkdir -p $READTHEDOCS_OUTPUT/pdf/
-                - echo "Hello world!" > $READTHEDOCS_OUTPUT/pdf/index.pdf
-            epub:
-                - echo "Building ePub"
-                - mkdir -p $READTHEDOCS_OUTPUT/epub/
-                - echo "Hello world!" > $READTHEDOCS_OUTPUT/epub/index.epub
+        # build:
+        #     html:
+        #         - echo "Building HTML"
+        #         - mkdir -p $READTHEDOCS_OUTPUT/html/
+        #         - echo "Hello world!" > $READTHEDOCS_OUTPUT/html/index.html
+        #     pdf:
+        #         - echo "Building PDF"
+        #         - mkdir -p $READTHEDOCS_OUTPUT/pdf/
+        #         - echo "Hello world!" > $READTHEDOCS_OUTPUT/pdf/index.pdf
+        #     epub:
+        #         - echo "Building ePub"
+        #         - mkdir -p $READTHEDOCS_OUTPUT/epub/
+        #         - echo "Hello world!" > $READTHEDOCS_OUTPUT/epub/index.epub
 
 # Build documentation with Mkdocs
 mkdocs:
