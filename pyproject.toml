@@ -1,6 +1,6 @@
 [project]
 name = "open-geodata"
-version = "25.9.29"
+version = "25.9.30"
 description = "Dados Espaciais do Brasil"
 authors = [{ name = "michelmetran", email = "michelmetran@gmail.com" }]
 keywords = ["geodata", "geoprocessamento", "github", "utility"]
@@ -65,10 +65,10 @@ raster = [
     # https://pypi.org/project/geemap/
     "geemap>=0.35.3",
 ]
-car = [
-    # pip install git+https://github.com/urbanogilson/SICAR
-    "sicar",
-]
+# car = [
+#     # pip install git+https://github.com/urbanogilson/SICAR
+#     "sicar",
+# ]
 
 [dependency-groups]
 dev = [
