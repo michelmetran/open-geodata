@@ -6,6 +6,7 @@ _summary_
 :rtype: _type_
 """
 
+import json
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
@@ -37,61 +38,120 @@ class CustomSSLContextHTTPAdapter(requests.adapters.HTTPAdapter):
 class CAR:
     def __init__(self, uf='SP') -> None:
         self.uf = uf
+        self.base_url = "https://geoserver.car.gov.br/geoserver/sicar/ows"
 
     @property
-    def url(self) -> str:
+    def url(self):
         # Base URL
-        base_url = 'https://geoserver.car.gov.br/geoserver/sicar/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=sicar%3Asicar_imoveis_es&outputFormat=application%2Fjson'
+        # base_url = 'https://geoserver.car.gov.br/geoserver/sicar/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=sicar%3Asicar_imoveis_es&outputFormat=application%2Fjson'
 
         # Divide URL
-        split_url = urlsplit(url=base_url)
+        # split_url = urlsplit(url=base_url)
         # print(split_url)
 
         # Muda o Layer
-        params = dict(parse_qsl(split_url.query))
-        params['typeName'] = f'sicar:sicar_imoveis_{self.uf.lower()}'
+        # params = dict(parse_qsl(split_url.query))
+        # params['typeName'] = f'sicar:sicar_imoveis_{self.uf.lower()}'
+
         # print(params)
 
-        # Params Encoded
-        encode_params = urlencode(query=params, doseq=True)
-        # print(encode_params)
+        # params = {
+        #     "service": "WFS",
+        #     "version": "1.0.0",
+        #     "request": "GetFeature",
+        #     "typeName": f"sicar:sicar_imoveis_{self.uf.lower()}",
+        #     "outputFormat": "application/json",
+        #     "maxFeatures": 100000,
+        # }
 
-        return urlunsplit(
-            (
-                split_url.scheme,  # https
-                split_url.netloc,  # servidor.com
-                split_url.path,  # /wfs
-                encode_params,  # Parâmetros modificados (a nova query)
-                split_url.fragment,  # fragmento (#anchor)
-            )
-        )
+        # # Params Encoded
+        # # encode_params = urlencode(query=params, doseq=True)
+        # # print(encode_params)
 
-    def download_file(self, filepath: str | Path):
-        """
-        Faz o downlaod do arquivo
+        # # return urlunsplit(
+        # #     (
+        # #         split_url.scheme,  # https
+        # #         split_url.netloc,  # servidor.com
+        # #         split_url.path,  # /wfs
+        # #         encode_params,  # Parâmetros modificados (a nova query)
+        # #         split_url.fragment,  # fragmento (#anchor)
+        # #     )
+        # # )
+        pass
 
-        :param filepath: Nome e pasta do arquivo
-        :type filepath: str | Path
-        :return: _description_
-        :rtype: str | Path
-        """
-
+    def create_session(self) -> None:
+        # Ajusta parâmetros para TLS 1.2
         ctx = create_urllib3_context()
         ctx.load_default_certs()
         ctx.set_ciphers('AES256-GCM-SHA384')
 
-        session = requests.session()
-        session.adapters.pop('https://', None)
-        session.mount('https://', CustomSSLContextHTTPAdapter(ctx))
+        # Cria Sessão
+        self.session = requests.session()
+        self.session.adapters.pop('https://', None)
+        self.session.mount('https://', CustomSSLContextHTTPAdapter(ctx))
 
-        with session.get(url=self.url, stream=True) as r:
+    def download_file(self, filepath: str | Path, url: str = None) -> None:
+        """
+        Faz o download do arquivo
+
+        :param filepath: Nome e pasta do arquivo em extensão _geojson_.
+        :type filepath: str | Path
+        """
+        # Url
+        if url is None:
+            url = self.url
+
+        #  Create Session
+        self.create_session()
+
+        params = {
+            "service": "WFS",
+            "version": "1.0.0",
+            "request": "GetFeature",
+            "typeName": "sicar:sicar_imoveis_sp",
+            "outputFormat": "application/json",
+            "maxFeatures": 50_000,
+        }
+        total = 0
+        start = 0
+        all_features = []
+
+        while True:
+            params["startIndex"] = start  # Pode não ser suportado, mas tente
+            r = self.session.get(url=self.base_url, params=params, stream=True)
             r.raise_for_status()
-            with open(filepath, 'wb') as f:
-                for chunk in r.iter_content(chunk_size=8192):
-                    # If you have chunk encoded response uncomment if
-                    # and set chunk_size parameter to None.
-                    # if chunk:
-                    f.write(chunk)
+            data = r.json()
+
+            # Obtem os features
+            features = data.get("features", [])
+            count = len(features)            
+            print(f"Chunk com {count} feições")
+            total += count
+            
+            #             
+            all_features.extend(features)
+            print(params["maxFeatures"])
+            if count < params["maxFeatures"]:
+                break
+            start += count
+
+        print(f"Total de feições: {total}")
+
+        # Salva tudo em um único GeoJSON
+
+        geojson = {"type": "FeatureCollection", "features": all_features}
+        with open(filepath, "w", encoding="utf-8") as f:
+            json.dump(geojson, f)
+
+        # # Faz Download
+        # with self.session.get(url=self.url, stream=True) as r:
+        #     r.raise_for_status()
+        #     with open(filepath, 'wb') as f:
+        #         for chunk in r.iter_content(chunk_size=8192):
+        #             # If you have chunk encoded response uncomment if
+        #             # and set chunk_size parameter to None.
+        #             # if chunk:
+        #             f.write(chunk)
 
 
 # # uf = 'SP'

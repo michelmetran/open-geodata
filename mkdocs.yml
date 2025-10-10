@@ -43,6 +43,7 @@ nav:
       - BR.MIDR (GeoServer): pages/dados/br/midr_geoserver.ipynb
       - BR.SFB (SICAR): pages/dados/br/sfb_sicar.ipynb
       - BR.SFB (GeoServer): pages/dados/br/sfb_geoserver.ipynb
+      - BR.SFB (Class): pages/dados/br/sfb_class.ipynb
       - BR.SNISB: pages/dados/br/snisb.md
 
   - Dados (São Paulo):
