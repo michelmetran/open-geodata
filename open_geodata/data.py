@@ -58,6 +58,7 @@ class DB:
         #
         if isinstance(json_data, bytes):
             self.json_raw = json.loads(json_data)
+
         else:
             raise Exception('Erro!')
 
@@ -69,7 +70,7 @@ class DB:
         flat = {}
         for outer_key, inner_dict in self.json_raw.items():
             for inner_key, value in inner_dict.items():
-                new_key = f"{outer_key}.{inner_key}"
+                new_key = f'{outer_key}.{inner_key}'
                 flat[new_key] = value
         return flat
 
