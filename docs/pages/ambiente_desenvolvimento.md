@@ -9,7 +9,10 @@ uv venv --python 3.12.08
 # Ativa ambiente
 .venv\Scripts\activate
 
+# Sincroniza aabmiente
 uv sync --group docs --group dev
+
+# 
 deactivate
 ```
 

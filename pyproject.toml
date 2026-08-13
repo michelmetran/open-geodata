@@ -19,6 +19,7 @@ dependencies = [
     # https://pypi.org/project/geopandas/
     "geopandas>=1.1.0",
     # https://pypi.org/project/mapclassify/
+    "ipykernel>=6.29.5",
     "mapclassify>=2.9.0",
     # https://pypi.org/project/matplotlib/
     "matplotlib>=3.10.3",

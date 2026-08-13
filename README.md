@@ -19,7 +19,7 @@ O projeto disponibiliza poucos dados, tendo em vista a limitação de 100mb do r
 
 <br>
 
-Para possibilitar testes do pacote, criei um [Google Colab](https://colab.research.google.com/drive/1s_w9t599OstJ0KS99NusH2EVGYa5twMh?usp=sharing).<br>
+Para possibilitar testes do pacote, criei um [_Google Colab_](https://colab.research.google.com/drive/1s_w9t599OstJ0KS99NusH2EVGYa5twMh?usp=sharing).<br>
 Todos os _datasets_ estão com _datum_ WGS84 (EPSG: 4326).
 
 <br>
@@ -28,6 +28,9 @@ Todos os _datasets_ estão com _datum_ WGS84 (EPSG: 4326).
 # Ativa
 .venv\Scripts\activate
 source .venv/bin/activate # Linux
+
+#
+uv sync --group dev --group docs
 
 # Serve Documentation
 mkdocs serve
